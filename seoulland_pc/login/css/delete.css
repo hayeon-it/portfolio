@@ -1,0 +1,24 @@
+.join_form {
+    overflow: hidden; padding:100px 0
+}
+
+.join_form li {
+    overflow: hidden
+}
+
+.join_form li label, .join_form li input {
+    float:none; margin: 0 auto; 
+}
+
+#content ul li {
+    text-align: center; width: 400px; margin: 0 auto; height: 100px;
+}
+
+#content ul li input#pass{
+    width:400px; margin: 0 auto
+}
+
+#content ul li input[type="submit"] {
+    width: 120px; background: #fe4365; color: #fff; border-radius: 30px; padding:5px 0; margin: 30px auto; cursor: pointer
+}
+

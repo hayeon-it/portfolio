@@ -1,0 +1,104 @@
+.visual_box {
+    position: relative;
+    left: 50%;
+    top: 120px;
+    margin-left: -1000px;
+    width: 2000px;
+}
+
+.subnav_box {
+    position: relative;
+    margin-top: 200px;
+    text-align: center;
+    font-family: 'Nanum Gothic';
+}
+
+.subnav_box h3,
+.subnav_box p {
+    position: absolute;
+    top: -240px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    text-shadow: 2px 2px 2px #999;
+    color: #fff;
+    font-size: 32px;
+    display: none
+}
+
+.subnav_box p {
+    top: -180px;
+    font-size: 16px;
+}
+
+.subnav_box .sub_nav {
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    top: -125px;
+    background: rgba(255, 255, 255, 1);
+    color: #fff;
+    width: 700px;
+    border-bottom: 1px solid #efefef
+}
+
+.subnav_box .sub_nav li {
+    float: left;
+    width: 33.33%;
+}
+
+.subnav_box .sub_nav li .current {
+    color: #fff;
+    font-weight: bold;
+    background: #fe4365
+}
+
+.subnav_box .sub_nav li a {
+    display: block;
+    padding: 16px 0;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all .5s;
+    color: #333
+}
+
+.subnav_box .sub_nav li a:hover {
+    color: #fff;
+    background: #fe4365
+}
+
+#content {
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+    font-family: 'Noto Sans KR', 'Nanum Gothic';
+    font-weight: 300;
+}
+
+#content .title_area {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#content .title_area .line_map {
+    width: 240px;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0 auto
+}
+
+#content .title_area .line_map strong {
+    font-weight: 400
+}
+
+#content .title_area h2 {
+    margin-top: 70px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#content .content_area {
+    margin: 100px auto;
+}

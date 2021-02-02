@@ -1,0 +1,349 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>서울랜드-어트랙션</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <!-- 웹폰트는 css 위에 -->
+  <link rel="stylesheet" href="../common/css/common.css" />
+  <!-- Header, Footer -->
+  <link rel="stylesheet" href="common/css/sub2common.css" />
+  <!-- 1 Depth의 공통 css -->
+  <link rel="stylesheet" href="css/content1.css" />
+  <!-- 어트랙션 css -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="../common/js/prefixfree.min.js"></script>
+  <script src="https://kit.fontawesome.com/58ed643491.js" crossorigin="anonymous"></script>
+  
+  <!--[if IE9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <? include "../common/sub_head.html" ?>
+  <!-- MAIN VISUAL -->
+  <div class="visual_box"><img src="common/images/visual_2.jpg" alt="" /></div>
+  <!-- SUB NAV -->
+  <div class="subnav_box">
+    <h3>즐길거리</h3>
+    <p>모두가 함께 즐기는 서울랜드</p>
+    <ul class="sub_nav">
+      <li><a href="sub2_1.html" class="current">어트랙션</a></li>
+      <li><a href="sub2_2.html">연간축제</a></li>
+      <li><a href="sub2_3.html">레스토랑</a></li>
+      <li><a href="sub2_4.html">소셜스토리</a></li>
+    </ul>
+  </div>
+  <!-- CONTENT -->
+  <article id="content">
+    <div class="title_area">
+      <div class="line_map">
+        <span>Home </span>&gt;<span> 즐길거리 </span>&gt;<strong>
+          어트랙션</strong>
+      </div>
+      <h2>어트랙션</h2>
+    </div>
+    <div class="content_area">
+      <div class="intro">
+        <p>
+          남녀노소 누구나 즐길 수 있는 서울랜드 어트랙션!<br>
+          가족, 친구, 연인과 함께 하세요
+        </p>
+      </div>
+      <div class="tab_box">
+      <ul class="tab_menu">
+        <li><a href="#tab" class="tab tab1">환상의 나라</a></li>
+        <li><a href="#tab" class="tab tab2">미래의 나라</a></li>
+        <li><a href="#tab" class="tab tab3">모험의 나라</a></li>
+      </ul>
+    </div>
+    <!-- Fantasy Section -->
+      <section class="contlist">
+        <h3>환상의 나라</h3>
+        <section>
+          <h4>어트랙션 정보</h4>
+          <ul class="attr_list">
+            <li class="first_attr">
+              <img src="images/content1/att_11.jpg" alt="" />
+              <dl>
+                <dt>회전목마</dt>
+                <dd>
+                  놀이공원의 절대적 상징물 ‘회전목마' 너무나도 예쁜 동화의
+                  세계에 있는 듯한 느낌! 온 가족이 음악에 맞춰 함께 떠나는
+                  환상적인 여행!
+                  <ul class="info">
+                    <li><span>탑승인원</span> 68명</li>
+                    <li><span>운행시간</span> 2분 30초</li>
+                    <li><span>키제한</span> 100cm 이상</li>
+                  </ul>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/content1/att_15.png" alt="" />
+              <dl>
+                <dt>또봇트레인</dt>
+                <dd>탑승인원 : 20명</dd>
+                <dd>운행시간 : 50초</dd>
+                <dd>키제한 : 100cm 이상</dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/content1/att_16.jpg" alt="" />
+              <dl>
+                <dt>라바트위스터</dt>
+                <dd>탑승인원 : 40명</dd>
+                <dd>운행시간 : 2분 30초</dd>
+                <dd>키제한 : 100cm 이상</dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/content1/att_18.jpg" alt="" />
+              <dl>
+                <dt>구름빵</dt>
+                <dd>탑승인원 : 12명</dd>
+                <dd>운행시간 : 2분 30초</dd>
+                <dd>키제한 : 90cm 이상 120cm 이하</dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/content1/att_12.jpg" alt="" />
+              <dl>
+                <dt>월드컵</dt>
+                <dd>탑승인원 : 1대당 4명</dd>
+                <dd>운행시간 : 2분 30초</dd>
+                <dd>키제한 : 130cm 이상</dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/content1/att_13.jpg" alt="" />
+              <dl>
+                <dt>카트라이더범퍼</dt>
+                <dd>탑승인원 : 50명</dd>
+                <dd>운행시간 : 3분</dd>
+                <dd>키제한 : 130cm 이상</dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/content1/att_14.jpg" alt="" />
+              <dl>
+                <dt>피터팬</dt>
+                <dd>탑승인원 : 32명</dd>
+                <dd>운행시간 : 2분</dd>
+                <dd>키제한 : 110cm 이상</dd>
+              </dl>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div class="map_inner">
+            <h4>위치 정보</h4>
+            <div class="attr_map">
+              <div class="map_img">
+              <img src="images/content1/map_1.jpg" alt="회전목마 위치정보" />
+            </div>
+              <ol>
+                <li><a href="#map" class="current">회전목마</a></li>
+                <li><a href="#map">또봇트레인</a></li>
+                <li><a href="#map">라바트위스터</a></li>
+                <li><a href="#map">구름빵</a></li>
+                <li><a href="#map">월드컵</a></li>
+                <li><a href="#map">카트라이더범퍼</a></li>
+                <li><a href="#map">피터팬</a></li>
+              </ol>
+              <a href="#plus" class="plus"><span class="hidden">위치정보 크게 보기</span><i class="fas fa-plus"></i></a>
+              <a href="#minus" class="minus"><span class="hidden">위치정보 작게 보기</span><i class="fas fa-minus"></i></a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Future section -->
+      <section class="contlist">
+        <h3>미래의 나라</h3>
+        <section>
+          <h4>어트랙션 정보</h4>
+          <ul class="attr_list">
+            <li class="first_attr">
+              <img src="images/content1/att_1.jpg" alt="" />
+              <dl>
+                <dt>스카이엑스</dt>
+                <dd>
+                  하늘을 날고 싶다! 스카이다이빙을 능가하는 초강력 제트엔진!
+                  스카이X는 스포츠적인 요소와 재미를 겸비한 놀이시설로
+                  번지점프의 스릴과 스카이다이빙의 짜릿한 흥미를 동시에 경험할
+                  수 있습니다.
+                  <ul class="info">
+                    <li><span>탑승인원</span> 1~3명</li>
+                    <li><span>운행시간</span> 20분</li>
+                    <li><span>키제한</span> 120cm 이상</li>
+                  </ul>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/content1/att_2.png" alt="" />
+              <dl>
+                <dt>블랙홀2000</dt>
+                <dd>탑승인원 : 24명</dd>
+                <dd>운행시간 : 3분</dd>
+                <dd>키제한 : 120cm 이상</dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/content1/att_7.png" alt="" />
+              <dl>
+                <dt>은하열차888</dt>
+                <dd>탑승인원 : 24명</dd>
+                <dd>운행시간 : 3분</dd>
+                <dd>키제한 : 120cm 이상</dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/content1/att_5.jpg" alt="" />
+              <dl>
+                <dt>엑스플라이어</dt>
+                <dd>탑승인원 : 24명</dd>
+                <dd>운행시간 : 3분 30초</dd>
+                <dd>키제한 : 120cm 이상</dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/content1/att_4.jpg" alt="" />
+              <dl>
+                <dt>달나라열차</dt>
+                <dd>탑승인원 : 1대당 4명</dd>
+                <dd>운행시간 : 1분 40초</dd>
+                <dd>키제한 : 120cm 이상</dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/content1/att_3.jpg" alt="" />
+              <dl>
+                <dt>춤추는요술집</dt>
+                <dd>탑승인원 : 34명</dd>
+                <dd>운행시간 : 3분</dd>
+                <dd>키제한 : 100cm 이상</dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/content1/att_8.jpg" alt="" />
+              <dl>
+                <dt>록카페</dt>
+                <dd>탑승인원 : 1대당 2명</dd>
+                <dd>운행시간 : 2분 30초</dd>
+                <dd>키제한 : 110cm 이상</dd>
+              </dl>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div class="map_inner">
+            <h4>위치 정보</h4>
+            <div class="attr_map">
+              <div class="map_img">
+              <img src="images/content1/map_8.jpg" alt="스카이엑스 위치정보"  />
+            </div>
+              <ol>
+                <li><a href="#map" class="current">스카이엑스</a></li>
+                <li><a href="#map">블랙홀2000</a></li>
+                <li><a href="#map">은하열차888</a></li>
+                <li><a href="#map">엑스플라이어</a></li>
+                <li><a href="#map">달나라열차</a></li>
+                <li><a href="#map">춤추는요술집</a></li>
+                <li><a href="#map">록카페</a></li>
+              </ol>
+              <a href="#plus" class="plus"><span class="hidden">위치정보 크게 보기</span><i class="fas fa-plus"></i></a>
+              <a href="#minus" class="minus"><span class="hidden">위치정보 작게 보기</span><i class="fas fa-minus"></i></a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Adventure section -->
+      <section class="contlist">
+        <h3>모험의 나라</h3>
+        <section>
+          <h4>어트랙션 정보</h4>
+          <ul class="attr_list">
+            <li class="first_attr">
+              <img src="images/content1/att_9.jpg" alt="" />
+              <dl>
+                <dt>킹바이킹</dt>
+                <dd>
+                  초대형 해적선을 타고 떠나는 모험! 가족, 친구들과 함께 짝을
+                  이루어 배의 양쪽으로 나누어 타고 소리쳐 보세요. 스릴과
+                  모험에 대해서는 더 이상 말이 필요 없는 국민적인 놀이기구!
+                  <ul class="info">
+                    <li><span>탑승인원</span> 84명</li>
+                    <li><span>운행시간</span> 3분 20초</li>
+                    <li><span>키제한</span> 110cm 이상</li>
+                  </ul>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/content1/att_20.jpg" alt="" />
+              <dl>
+                <dt>해적소굴</dt>
+                <dd>탑승인원 : 12명</dd>
+                <dd>운행시간 : 2분 30초</dd>
+                <dd>키제한 : 120cm 이상</dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/content1/att_21.jpg" alt="" />
+              <dl>
+                <dt>니나노고카트</dt>
+                <dd>탑승인원 : 40명</dd>
+                <dd>운행시간 : 3바퀴 회전</dd>
+                <dd>키제한 : 130cm이상</dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/content1/att_22.jpg" alt="" />
+              <dl>
+                <dt>급류타기</dt>
+                <dd>탑승인원 : 1대당 4명</dd>
+                <dd>운행시간 : 3분 50초</dd>
+                <dd>키제한 : 110cm 이상</dd>
+              </dl>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div class="map_inner">
+            <h4>위치 정보</h4>
+            <div class="attr_map">
+            <div class="map_img">
+              <img src="images/content1/map_15.jpg" alt="킹바이킹 위치정보" />
+            </div>
+              <ol>
+                <li><a href="#map" class="current">킹바이킹</a></li>
+                <li><a href="#map">해적소굴</a></li>
+                <li><a href="#map">니나노고카트</a></li>
+                <li><a href="#map">급류타기</a></li>
+              </ol>
+              <a href="#plus" class="plus"><span class="hidden">위치정보 크게 보기</span><i class="fas fa-plus"></i></a>
+              <a href="#minus" class="minus"><span class="hidden">위치정보 작게 보기</span><i class="fas fa-minus"></i></a>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </article>
+
+  <? include "../common/sub_foot.html" ?>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="common/js/sticky.js"></script>
+  <script src="js/attr_map.js"></script>
+</body>
+</html>

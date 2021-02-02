@@ -1,0 +1,366 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>서울랜드</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="common/css/common.css" />
+  <link rel="stylesheet" href="maincss/main.css" />
+  <script src="mainjs/mainpopup.js"></script>
+  <script src="common/js/prefixfree.min.js"></script>
+  <script src="https://kit.fontawesome.com/58ed643491.js" crossorigin="anonymous"></script>
+  <!--[if IE9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <? include "common/main_head.html" ?>
+  <!-- VISUAL -->
+  <div class="visual_box">
+    <div class="visual">
+      <ul>
+        <li><a href="#"><img src="images/main-11.jpg" alt="">
+            <p> 낮에는 <span>서울랜드</span> <br> 밤에는 <span>루나파크</span></p>
+          </a></li>
+        <li><a href="#"><img src="images/main-7.jpg" alt="">
+          </a></li>
+        <li><a href="#"><img src="images/main_002.jpg" alt="">
+          </a></li>
+        <li><a href="#"><img src="images/main-4.jpg" alt="">
+            <p> <span>몬스터시티</span> <br>(9월 coming soon)</p>
+          </a></li>
+      </ul>
+    </div>
+    <div class="dock">
+      <span class="mbutton btn1"></span>
+      <span class="mbutton btn2"></span>
+      <span class="mbutton btn3"></span>
+      <span class="mbutton btn4"></span>
+      <span class="ps"></span>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <article id="content">
+    <h2 class="hidden">본문콘텐츠영역</h2>
+    <!-- Open Hours : Content_1 -->
+    <div class="open_hours">
+      <h3>
+        <a href="sub3/sub3_2.html">
+          <i class="far fa-clock"></i> 운영시간 10:00 ~ 21:00
+        </a>
+      </h3>
+    </div>
+    <!-- Promotion : Content_2 -->
+    <div class="promotion">
+      <h3><span>나에게 꼭 맞는 혜택</span> 알아볼까요?</h3>
+      <p>현재 진행중인 할인혜택을 놓치지 마세요.</p>
+      <ul class="promo_list">
+        <li>
+          <a href="sub4/sub4_2.html?a=1">
+            <img src="images/promo_1.jpg" alt="" />
+            <dl>
+              <dt>어린이 + 동반 1인</dt>
+              <dd>38,000원</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="sub4/sub4_2.html?a=2">
+            <img src="images/promo_2.jpg" alt="" />
+            <dl>
+              <dt>중, 고등학생</dt>
+              <dd>18,500원</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="sub4/sub4_2.html?a=3">
+            <img src="images/promo_3.jpg" alt="" />
+            <dl>
+              <dt>생일축하 파크이용권</dt>
+              <dd>23,000원</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="sub4/sub4_2.html?a=4">
+            <img src="images/promo_4.jpg" alt="" />
+            <dl>
+              <dt>에어서울 탑승권 소유자</dt>
+              <dd>50% OFF</dd>
+            </dl>
+          </a>
+        </li>
+      </ul>
+      <a class="more_btn" href="sub4/sub4_2.html">
+        더 많은 할인혜택 보기</a>
+    </div>
+    <!-- Attraction : Content_3 -->
+    <div class="attraction">
+      <div class="attraction_inner">
+        <h3><span> 남녀노소 누구나 즐길 수 있는</span> 어트랙션!</h3>
+        <p>가족, 친구, 연인과 함께 즐기세요.</p>
+        <div class="attr_box">
+          <ul class="attr_list">
+            <li>
+              <a href="sub2/sub2_1.html?a=1">
+                <img src="images/att_001.jpg" alt="" />
+                <dl>
+                  <dt>회전목마</dt>
+                  <dd>
+                    놀이공원의 절대적 상징물 ‘회전목마' 너무나도 예쁜 동화의 세계에 있는 듯한 느낌!
+                    온 가족이 함께 떠나는 환상적인 여행!
+                  </dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="sub2/sub2_1.html?a=2">
+                <img src="images/att_6.jpg" alt="" />
+                <dl>
+                  <dt>스카이엑스</dt>
+                  <dd>
+                    하늘을 날고 싶다! 스카이다이빙을 능가하는 초강력 제트엔진!
+                  </dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="sub2/sub2_1.html?a=3">
+                <img src="images/att_1.jpg" alt="" />
+                <dl>
+                  <dt>킹바이킹</dt>
+                  <dd>
+                    거대한 해적선이 하늘을 가르며 휘~~잉!
+                  </dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="sub2/sub2_1.html?a=1">
+                <img src="images/att_2.jpg" alt="" />
+                <dl>
+                  <dt>라바트위스터</dt>
+                  <dd>
+                    하늘을 나는 라바를 타고 우리 둘이~
+                    시원한 바람을 가르며 계절의 변화를 느껴보세요
+                  </dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="sub2/sub2_1.html?a=1">
+                <img src="images/att_15.png" alt="" />
+                <dl>
+                  <dt>또봇트레인</dt>
+                  <dd>
+                    TV에서만 보았던 또봇 에볼루션 Y를 직접 놀이기구로 만나고~
+                    실제 크기(6M) 또봇 에볼루션 X와 사진 촬영도 찰칵!
+                  </dd>
+
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="sub2/sub2_1.html?a=2">
+                <img src="images/att_8.png" alt="" />
+                <dl>
+                  <dt>은하열차888</dt>
+                  <dd>
+                    360도 연속회전과 아슬아슬 터널을 통과하는 스릴 롤러코스터
+                  </dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="sub2/sub2_1.html?a=2">
+                <img src="images/att_9.jpg" alt="" />
+                <dl>
+                  <dt>엑스플라이어</dt>
+                  <dd>
+                    하늘을 나는 두개의 우주선이 360도 교차 회전
+                  </dd>
+                </dl>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="slide_btn" href="#btn1">
+          <strong class="mbtn"><img src="images/bk-3.png" alt=""></strong>
+          <span class="sbtn"></span>
+          <span class="sbtn"></span>
+          <span class="sbtn"></span>
+          <span class="sbtn"></span>
+        </a>
+      </div>
+    </div>
+    <!-- Card : Content_4 -->
+    <div class="card">
+      <h3>서울랜드와 카드사의 제휴서비스로 <span>더 저렴하게!</span></h3>
+      <div class="card_box">
+        <div class="card_slide">
+          <ul class="card_list">
+            <li class="prev">
+              <img class="card1" src="images/ca_9.png" alt="" />
+              <dl class="hide">
+                <dt>SOL Deep Dream 신한카드 체크</dt>
+                <dd>자유이용권 30% 할인<br>(본인에 한함. 전 놀이공원 1일 1회)</dd>
+              </dl>
+            </li>
+            <li class="current">
+              <img src="images/ca_5.png" alt="" />
+              <dl>
+                <dt>네이버페이 라인프렌즈 신한카드</dt>
+                <dd>자유이용권 30% 할인<br>(본인에 한함. 전 놀이공원 1일 1회)</dd>
+              </dl>
+            </li>
+            <li class="next">
+              <img class="card2" src="images/ca_2.png" alt="" />
+              <dl class="hide">
+                <dt>카카오페이 신한 체크카드</dt>
+                <dd>자유이용권 35% 할인<br>(본인에 한함. 전 놀이공원 1일 1회)</dd>
+              </dl>
+            </li>
+            <li class="prev">
+              <img class="card1" src="images/ca_6.png" alt="" />
+              <dl class="hide">
+                <dt>카카오뱅크 신한카드</dt>
+                <dd>자유이용권 50% 할인<br>(본인에 한함. 전 놀이공원 1일 1회)</dd>
+              </dl>
+            </li>
+            <li class="current">
+              <img src="images/ca_1.png" alt="" />
+              <dl>
+                <dt>삼성카드 4 V3</dt>
+                <dd>자유이용권 50% 할인<br>(본인에 한함. 전 놀이공원 1일 1회)</dd>
+              </dl>
+            </li>
+            <li class="next">
+              <img class="card2" src="images/ca_11.png" alt="" />
+              <dl class="hide">
+                <dt>삼성카드 2 V4</dt>
+                <dd>자유이용권 45% 할인<br>(본인에 한함. 전 놀이공원 1일 1회)</dd>
+              </dl>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="#none" class="button m2"><i class="fas fa-chevron-circle-right"></i></a>
+      <a class="more_btn" href="sub4/sub4_3.html">더 많은 제휴카드 보기</a>
+    </div>
+    <!-- Info : Cotent_5 -->
+    <div class="info">
+      <div class="info_inner">
+        <h3>서울랜드에 대해 <span>더 알고싶다면?</span></h3>
+        <ul class="tab_menu">
+          <li><a href="tab.html#info_list" class="current">공지사항</a></li>
+          <li><a href="tab.html#faq_list">FAQ</a></li>
+        </ul>
+        <div class="info_container">
+        </div>
+      </div>
+    </div>
+    <!-- Event : Content_6-->
+    <div class="event">
+      <h3><span>함께 즐기는</span> 이벤트</h3>
+      <ul class="event_list">
+        <li>
+          <span class="hidden">인스타그램</span><i class="fab fa-instagram"></i>
+          <img src="images/event_3.png" alt="" />
+          <dl>
+            <dt>커플 인생샷 포즈 추천</dt>
+            <dd>
+              💩손 커플을 위한 인생샷 포즈대백과
+              <a href="sub2/sub2_4.html" class="more">more</a>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <span class="hidden">인스타그램</span><i class="fab fa-instagram"></i>
+          <img src="images/event_4.jpg" alt="" />
+          <dl>
+            <dt>서울랜드에서 찍은 인생샷 그려드립니다</dt>
+            <dd>
+              설랜 인생샷, 일러스트로 그려드립니다
+              <a href="sub2/sub2_4.html" class="more">more</a>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <span class="hidden">페이스북</span><i class="fab fa-facebook"></i>
+          <img src="images/event_1.png" alt="" />
+          <dl>
+            <dt>서울랜드 캐릭터 총출동</dt>
+            <dd>
+              매주 주말마다! 설랜 캐릭터 총 출동
+              <a href="sub2/sub2_4.html" class="more">more</a>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <span class="hidden">페이스북</span><i class="fab fa-facebook"></i>
+          <img src="images/event_2.png" alt="" />
+          <dl>
+            <dt>용기 있는 아이가 탈만한 놀이기구 BEST5</dt>
+            <dd>
+              매주 주말마다! 설랜 캐릭터 총 출동
+              <a href="sub2/sub2_4.html" class="more">more</a>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <span class="hidden">페이스북</span><i class="fab fa-facebook"></i>
+          <img src="images/event_5.png" alt="" />
+          <dl>
+            <dt>꼭 가야할 필수코스 BEST5</dt>
+            <dd>
+              서울랜드 필수코스 꼭 가보자
+              <a href="sub2/sub2_4.html" class="more">more</a>
+            </dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </article>
+  <? include "common/main_foot.html" ?>
+  <script src="mainjs/card_slide.js"></script>
+  <script src="mainjs/attraction_arrow.js"></script>
+  <script src="mainjs/tab.js"></script>
+  <script src="mainjs/ajtab.js"></script>
+  <script src="mainjs/move.js"></script>
+  <script src="mainjs/scroll.js"></script>
+  <!-- Popup Notice -->
+  <div id="showimage" style="z-index:99;position:absolute;width:322px;left:50px;top:200px;">
+    <script>
+      function closeWin() {
+        var chk = document.getElementById('Notice')
+        if (chk.checked) {
+          setCookie("Notice", "done", 1); 
+        }
+      }
+      if (getCookie("Notice") == "done") {
+        hidebox();
+      }
+    </script>
+    <div>
+      <img src="popup/pop.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.">
+    </div>
+    <div style="font-size:12px;text-align:center;color:#fff;">
+      <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을
+        열지 않음.</label>
+      <a href="#" onclick="closeWin();hidebox();return false;"> [close] </a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,574 @@
+.list_content:nth-of-type(2) {
+    display: none
+}
+
+#content .title_area {
+    position: relative;
+    margin: 0 auto 170px;
+    width: 1200px;
+}
+
+.content_area {
+    position: relative;
+    padding-bottom: 60px
+}
+
+/* list css */
+
+.list_search {
+    width: 1160px;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+
+.list_search li:nth-of-type(1) {
+    float: left;
+    width: 50px;
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 400
+}
+
+.list_search li:nth-of-type(1) span {
+    color: #fe4365;
+    font-weight: 700
+}
+
+.list_search li:nth-of-type(1) {
+    width: 130px;
+    float: left
+}
+
+
+.list_search li:nth-of-type(2) {
+    width: 70px;
+    float: left;
+}
+
+.list_search li:nth-of-type(2) select {
+    padding: 12px 6px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px
+}
+
+
+.list_search .list_search2 {
+    float: right;
+    width: 430px;
+}
+
+.list_search .list_search2 select {
+    width: 80px;
+    padding: 12px 6px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px
+}
+
+
+.list_search .list_search2 input:nth-of-type(1) {
+    width: 250px;
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-right: 5px;
+    outline: 0
+}
+
+.list_search .list_search2 input:nth-of-type(2) {
+    width: 42px;
+    padding: 12px 0;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    background: #DD5E89;
+    background: linear-gradient(to right, #F7BB97, #DD5E89);
+    color: #fff;
+    outline: 0
+}
+
+.view_list {
+    position: absolute;
+    top: -80px;
+    right: 20px;
+    width: 100px;
+    overflow: hidden
+}
+
+.view_list a {
+    display: block;
+    width: 40px;
+    padding: 7px 0;
+    font-size: 16px;
+    float: left;
+    border: 1px solid #ddd
+}
+
+.view_list a:nth-of-type(1) {
+    margin-right: 10px
+}
+
+.view_list a.current {
+    background: #fe4365;
+    color: #fff;
+}
+
+
+
+
+
+.list_content {
+    width: 1150px;
+    margin: 50px auto;
+    position: relative
+}
+
+.list_content a {
+    display: block
+}
+
+.list_content .list_item {
+    overflow: hidden;
+    border: 1px solid #dfdfdf;
+    margin-bottom: 50px;
+}
+
+.list_content .list_item>li {
+    float: left;
+    padding: 40px 0 55px;
+    font-size: 16px;
+    height: 140px
+}
+
+
+.list_content .list_item>li:nth-of-type(1) {
+    width: 750px;
+    padding-left: 30px
+}
+
+.list_content .list_item .subcon li {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700
+}
+
+.list_content .list_item .subcon li:nth-of-type(2) {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 14px;
+    line-height: 1.8em
+}
+
+.list_content .list_item li .admin {
+    overflow: hidden;
+    margin-top: 20px
+}
+
+.list_content .list_item li .admin li {
+    margin-bottom: 14px;
+    color: #888;
+    font-size: 12px;
+    float: left;
+    margin-right: 30px
+}
+
+
+
+.list_content .list_item li .admin li:nth-of-type(1) {
+    margin-left: 6px
+}
+
+
+.list_content .list_item>li:nth-of-type(2) {
+    width: 300px;
+    float: right;
+    padding: 0;
+    text-align: right
+}
+
+
+.list_content .list_item li img {
+    width: 300px;
+    height: 236px
+}
+
+
+
+.list_content .page_button {
+    margin-top: 40px;
+    text-align: center;
+    clear: both
+}
+
+
+.list_content .page_button .page_num span {
+    display: inline-block;
+    width: 30px;
+    border: 1px solid #e2e2e2;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 6px 0
+}
+
+.list_content .page_button .page_num b span {
+    background: #fe4365;
+    color: #fff
+}
+
+.list_content .page_button .page_num a {
+    display: inline-block
+}
+
+.list_content .button {
+    position: absolute;
+    bottom: 2px;
+    right: 10px
+}
+
+.list_content .button a {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+    padding: 6px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    background: #fafafa
+}
+
+
+.gal {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.gal .list_item {
+    float: left;
+    width: 360px;
+    margin-right: 60px;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+.gal a:nth-of-type(1) .list_item,
+.gal a:nth-of-type(2) .list_item,
+.gal a:nth-of-type(3) .list_item {
+    margin-top: 50px
+}
+
+.gal a:nth-of-type(3n) .list_item {
+    margin-right: 0
+}
+
+
+.gal .list_item>li {
+    float: none;
+    width: 360px;
+    height: auto;
+    padding: 0;
+}
+
+
+.gal .list_item>li:nth-of-type(1) {
+    width: 360px;
+    padding-left: 0
+}
+
+.gal .list_item .subcon {
+    box-sizing: border-box;
+    padding: 10px
+}
+
+.gal .list_item .subcon li {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700
+}
+
+.gal .list_item .subcon li:nth-of-type(2) {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 14px;
+    line-height: 1.8em;
+    color: #666
+}
+
+
+.gal .list_item>li:nth-of-type(2) {
+    width: 360px;
+    float: none;
+}
+
+
+.gal .list_item li img {
+    width: 360px;
+    height: 296px
+}
+
+
+
+
+
+
+
+
+.write_form {
+    width: 1100px;
+    margin: 0 auto 100px
+}
+
+.write_form ul {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee
+}
+
+.write_form ul:nth-of-type(1) {
+    border-top: 1px solid #ddd
+}
+
+.write_form ul li {
+    font-size: 16px;
+    box-sizing: border-box
+}
+
+
+
+.write_form ul:nth-of-type(1) li {
+    float: left
+}
+
+.write_form ul:nth-of-type(1) li:nth-of-type(1) {
+    width: 150px;
+    padding: 8px 0;
+    font-weight: 400
+}
+
+.write_form ul:nth-of-type(1) li:nth-of-type(2) {
+    width: 200px;
+    text-align: left;
+    padding: 8px 10px
+}
+
+.write_form ul:nth-of-type(1) li:nth-of-type(3) {
+    width: 140px;
+    float: right;
+    font-size: 13px;
+    color: #666;
+    padding: 8px 0
+}
+
+.write_form ul:nth-of-type(1) li:nth-of-type(3) label {
+    cursor: pointer
+}
+
+.write_form ul:nth-of-type(2) li {
+    float: left;
+}
+
+.write_form ul:nth-of-type(2) li:nth-of-type(1) {
+    width: 150px;
+    padding: 8px 0;
+    font-weight: 400
+}
+
+.write_form ul:nth-of-type(2) li:nth-of-type(2) {
+    width: 950px;
+}
+
+.write_form ul:nth-of-type(2) input {
+    border: 1px solid #ddd;
+    outline: 0;
+    width: 950px;
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: "Noto Sans KR";
+    box-sizing: border-box;
+    padding: 8px;
+    color: #333;
+    font-weight: 300;
+    border-radius: 10px
+}
+
+
+.write_form ul:nth-of-type(3) li {
+    float: left
+}
+
+.write_form ul:nth-of-type(3) li:nth-of-type(1) {
+    width: 150px;
+    padding: 8px 0;
+    height: 300px;
+    box-sizing: border-box;
+    font-weight: 400
+}
+
+.write_form ul:nth-of-type(3) li:nth-of-type(2) {
+    width: 950px;
+}
+
+
+.write_form ul:nth-of-type(3) textarea {
+    border: 1px solid #ddd;
+    outline: 0;
+    width: 950px;
+    height: 300px;
+    overflow-y: auto;
+    font-size: 16px;
+    font-family: "Noto Sans KR";
+    box-sizing: border-box;
+    padding: 8px;
+    color: #333;
+    font-weight: 300;
+    border-radius: 10px
+}
+
+
+.write_button {
+    margin-top: 40px
+}
+
+.write_button input,
+.write_button a {
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 5px 16px;
+    font-size: 16px;
+    border-radius: 50px
+}
+
+.write_button input {
+    padding: 7px 17px;
+    color: #fff;
+    background: #fe4365;
+    outline: 0;
+    cursor: pointer
+}
+
+
+/* view.php css */
+
+
+
+.view_title {
+    width: 1150px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden
+}
+
+.view_title li {
+    font-size: 23px;
+    padding: 10px 0
+}
+
+.view_title li:nth-of-type(1) {
+    float: left;
+    width: 750px;
+    font-weight: 700;
+    text-align: left
+}
+
+.view_title li:nth-of-type(2) {
+    float: right;
+    width: 350px;
+    font-size: 14px;
+    color: #666
+}
+
+.view_title li:nth-of-type(2) a {
+    display: inline-block;
+    margin-right: 6px;
+    background: #eee;
+    border-radius: 20px;
+    padding: 5px 12px
+}
+
+
+.view_content {
+    width: 1130px;
+    margin: 0 auto;
+    padding: 60px;
+    font-size: 16px;
+    line-height: 2em;
+    text-align: center
+}
+
+
+
+
+/* 썸네일용 이미지는 본문에서는 보이지않게 */
+.view_content img:last-of-type {
+    display: none
+}
+
+.view_button {
+    width: 1150px;
+    margin: 20px auto 100px;
+    overflow: hidden;
+}
+
+.view_button li {
+    overflow: hidden
+}
+
+.view_button a {
+    display: block;
+}
+
+.view_button>.btn1 {
+    float: left;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    width: 100px;
+    padding: 6px 0;
+    font-size: 16px;
+    border-radius: 30px
+}
+
+/*
+.view_button > li:nth-of-type(2) {
+    float: right; width:240px
+}
+*/
+.view_button li:nth-of-type(2) {
+    float: right
+}
+
+.view_button .md {
+    overflow: hidden
+}
+
+.view_button .md .btn2,
+.view_button .md .btn3,
+.view_button .btn4 {
+    font-size: 16px;
+    margin-right: 7px;
+    float: left;
+}
+
+.view_button .md .btn2 a,
+.view_button .md .btn3 a,
+.view_button .btn4 a {
+    padding: 6px 16px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    border-radius: 30px;
+}
+
+.view_button .btn4 {
+    float: right;
+    border: 0
+}
+
+.view_button .btn4 a {
+    color: #fff;
+    background: #fe4365;
+}

@@ -1,0 +1,564 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>서울랜드-레스토랑</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- 웹폰트는 css 위에 -->
+    <link rel="stylesheet" href="../common/css/common.css" /> <!-- Header, Footer -->
+    <link rel="stylesheet" href="common/css/sub2common.css"> <!-- 1 Depth의 공통 css -->
+    <link rel="stylesheet" href="css/content3.css" /> <!-- 어트랙션 css -->
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/58ed643491.js" crossorigin="anonymous"></script>
+    <!--[if IE9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <? include "../common/sub_head.html" ?>
+
+    <!-- MAIN VISUAL -->
+    <div class="visual_box"><img src="common/images/visual_2.jpg" alt=""></div>
+    <!-- SUB NAV -->
+    <div class="subnav_box">
+        <h3>즐길거리</h3>
+        <p>모두가 함께 즐기는 서울랜드</p>
+        <ul class="sub_nav">
+            <li><a href="sub2_1.html">어트랙션</a></li>
+            <li><a href="sub2_2.html">연간축제</a></li>
+            <li><a href="sub2_3.html" class="current">레스토랑</a></li>
+            <li><a href="sub2_4.html">소셜스토리</a></li>
+        </ul>
+    </div>
+    <!-- CONTENT -->
+    <article id="content">
+        <div class="title_area">
+            <div class="line_map">
+                <span>Home </span>&gt;<span> 즐길거리 </span>&gt;<a> 레스토랑</a>
+            </div>
+            <h2>레스토랑</h2>
+        </div>
+        <div class="content_area">
+            <div class="intro">
+                <p>맛있는 휴식, 달콤한 상상!<br> 가족·친구·연인과 함께 즐겨보세요!</p>
+            </div>
+            <div class="content_inner">
+                <div class="tab_box">
+                    <ul class="tab_menu">
+                        <li><a href="#tab" class="tab tab1">환상의 나라</a></li>
+                        <li><a href="#tab" class="tab tab2">미래의 나라</a></li>
+                        <li><a href="#tab" class="tab tab3">모험의 나라</a></li>
+                    </ul>
+                </div>
+                <!-- Fantasy Section -->
+                <section class="contlist">
+                    <h3>환상의 나라</h3>
+                    <ul class="restaurant_list ">
+                        <li>
+                            <img src="images/content3/res_1.jpg" alt="">
+                            <dl>
+                                <dt>CAFE쉼표</dt>
+                                <dd><i class="fas fa-map-marker-alt"></i> <span class="hidden">위치</span> 루나힐 근처</dd>
+                                <dd class="rest_info"> 서울랜드의 분위기를 즐길 수 있는 대표 카페. 맛있는 간식을 카페쉼표에서 즐겨보세요.</dd>
+                            </dl>
+                            <dl>
+                                <dt>대표메뉴</dt>
+                                <dd class="menu_list">
+                                    <img src="images/content3/ice.jpg" alt="">
+                                    아이스크림
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md1">          
+                                        <img src="images/content3/ice.jpg" alt="">                                    
+                                         <p>아이스크림</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>바닐라 아이스크림</td>
+                                                    <td>3,000원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>초콜릿 아이스크림</td>
+                                                    <td>3,500원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>믹스 아이스크림</td>
+                                                    <td>3,500원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>       
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                       
+                                   </div>
+                                </dd>
+                                <dd class="menu_list">
+                                    <img src="images/content3/res_6.jpg" alt="">
+                                    마카롱
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md2">          
+                                        <img src="images/content3/re_1.jpg" alt="">
+                                         <p>마카롱</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>딸기 마카롱</td>
+                                                    <td>3,500원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>초코 마카롱</td>
+                                                    <td>3,500원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>레드벨벳 마카롱</td>
+                                                    <td>4,000원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>       
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                    
+                                     </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="images/content3/rest_6.jpg" alt="">
+                            <dl>
+                                <dt>키즈팰리스</dt>
+                                <dd><i class="fas fa-map-marker-alt"></i><span class="hidden">위치</span> 회전목마 근처</dd>
+                                <dd class="rest_info">온 가족의 입맛을 한번에 사로잡은 패밀리 레스토랑.
+                                    아이들의 입맛에 딱 맞는 다채로운 메뉴로 언제나 큰 인기를 누리고 있습니다.
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>대표메뉴</dt>
+                                <dd class="menu_list">
+                                    <img src="images/content3/don.jpg" alt="">
+                                    돈가스
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md3">          
+                                        <img src="images/content3/don.jpg" alt="">
+                                         <p>돈가스</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>돈가스</td>
+                                                    <td>7,000원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>치즈돈가스</td>
+                                                    <td>8,000원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>카레돈가스</td>
+                                                    <td>7,500원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>    
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                              
+                                    </div> 
+                                </dd>
+                                <dd class="menu_list">
+                                    <img src="images/content3/udon.jpg" alt="">
+                                    우동
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md4">          
+                                        <img src="images/content3/udon.jpg" alt="">
+                                         <p>우동</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>우동</td>
+                                                    <td>6,000원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>카레우동</td>
+                                                    <td>6,500원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>우동정식</td>
+                                                    <td>8,000원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>    
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                              
+                                     </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="images/content3/res_2.jpg" alt="">
+                            <dl>
+                                <dt>까페리앙</dt>
+                                <dd><i class="fas fa-map-marker-alt"></i><span class="hidden">위치</span> 워터워크 근처</dd>
+                                <dd class="rest_info">이탈리안 커피와 뉴욕 핫도그를 즐길 수 있는 카페</dd>
+                            </dl>
+                            <dl>
+                                <dt>대표메뉴</dt>
+                                <dd class="menu_list">
+                                    <img src="images/content3/hot.jpg" alt="">
+                                    핫도그
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md5">          
+                                        <img src="images/content3/hot.jpg" alt="">
+                                         <p>핫도그</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>감자통모짜</td>
+                                                    <td>3,500원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>모짜렐라치즈핫도그</td>
+                                                    <td>4,000원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>     
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                       
+                                     </div>
+                                </dd>
+                                <dd class="menu_list">
+                                    <img src="images/content3/cf.jpg" alt="">
+                                    커피
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md6">          
+                                        <img src="images/content3/cf.jpg" alt="">
+                                         <p>커피</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>카페라떼</td>
+                                                    <td>3,500원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>아메리카노</td>
+                                                    <td>2,500원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>바닐라라떼</td>
+                                                    <td>4,000원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table> 
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                              
+                                     </div>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                <!-- Future Section -->
+                <section class="contlist">
+                    <h3>미래의 나라</h3>
+                    <ul class="restaurant_list ">
+                        <li>
+                            <img src="images/content3/rest_1.jpg" alt="">
+                            <dl>
+                                <dt>카레원</dt>
+                                <dd><i class="fas fa-map-marker-alt"></i><span class="hidden">위치</span> 캐릭터하우스 근처</dd>
+                                <dd class="rest_info">카레&하이라이스 전문점입니다.
+                                    온가족이 좋아하는 카레와 하이라이스를 카레원에서 즐겨보세요.
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>대표메뉴</dt>
+                                <dd class="menu_list">
+                                    <img src="images/content3/curry.jpg" alt="">
+                                    카레
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md1">          
+                                        <img src="images/content3/curry.jpg" alt="">
+                                         <p>카레</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>카레라이스</td>
+                                                    <td>7,500원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>치킨카레</td>
+                                                    <td>8,500원</td>
+                                                </tr>                                              
+                                            </tbody>
+                                        </table> 
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                                
+                                     </div>
+                                    </dd>
+                                <dd class="menu_list">
+                                    <img src="images/content3/soba.jpg" alt="">
+                                    야끼소바
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md2">          
+                                        <img src="images/content3/soba.jpg" alt="">
+                                         <p>야끼소바</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>야끼소바</td>
+                                                    <td>8,500원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>오믈렛 야끼소바</td>
+                                                    <td>9,000원</td>
+                                                </tr>                                      
+                                            </tbody>
+                                        </table>  
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                           
+                                     </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="images/content3/rest_2.jpg" alt="">
+                            <dl>
+                                <dt>롯데리아 1호점</dt>
+                                <dd><i class="fas fa-map-marker-alt"></i><span class="hidden">위치</span> 달나라열차 근처</dd>
+                                <dd class="rest_info"> 맛있는 롯데리아 햄버거와 치킨을 서울랜드에서도 즐길 수 있어요.</dd>
+                            </dl>
+                            <dl>
+                                <dt>대표메뉴</dt>
+                                <dd class="menu_list">
+                                    <img src="images/content3/hambur.jpg" alt="">
+                                    햄버거
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md3">          
+                                        <img src="images/content3/hambur.jpg" alt="">
+                                         <p>햄버거</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>불고기버거 세트</td>
+                                                    <td>4,500원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>새우버거 세트</td>
+                                                    <td>5,000원</td>
+                                                </tr>                                              
+                                            </tbody>
+                                        </table>    
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                           
+                                     </div>
+                                </dd>
+                                <dd class="menu_list">
+                                    <img src="images/content3/coke.jpg" alt="">
+                                    탄산음료
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md4">          
+                                        <img src="images/content3/coke.jpg" alt="">
+                                         <p>탄산음료</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>콜라</td>
+                                                    <td>2,500원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>사이다</td>
+                                                    <td>2,000원</td>
+                                                </tr>                                              
+                                            </tbody>
+                                        </table>    
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                            
+                                     </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="images/content3/res_3.jpg" alt="">
+                            <dl>
+                                <dt>스파게티니 팩토리</dt>
+                                <dd><i class="fas fa-map-marker-alt"></i><span class="hidden">위치</span> 달나라열차 근처</dd>
+                                <dd class="rest_info"> 풍부한 맛의 정통 파스타와 바삭한 화덕 피자로 손님여러분을 이탈리아로 모십니다</dd>
+                            </dl>
+                            <dl>
+                                <dt>대표메뉴</dt>
+                                <dd class="menu_list">
+                                    <img src="images/content3/res_9.jpg" alt="">
+                                    스파게티
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md5">          
+                                        <img src="images/content3/spa.jpg" alt="">
+                                         <p>스파게티</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>치즈오븐스파게티</td>
+                                                    <td>7,500원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>크림스파게티</td>
+                                                    <td>8,000원</td>
+                                                </tr>                                              
+                                            </tbody>
+                                        </table>      
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                          
+                                     </div>
+                                </dd>
+                                <dd class="menu_list">
+                                    <img src="images/content3/res_12.jpg" alt="">
+                                    피자
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md6">          
+                                        <img src="images/content3/pizza.jpg" alt="">
+                                         <p>피자</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>고르곤졸라 피자</td>
+                                                    <td>11,500원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>포테이토피자</td>
+                                                    <td>10,500원</td>
+                                                </tr>                                              
+                                            </tbody>
+                                        </table>     
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                        
+                                     </div>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                <!-- Adventure Section -->
+                <section class="contlist">
+                    <h3>모험의 나라</h3>
+                    <ul class="restaurant_list ">
+                        <li>
+                            <img src="images/content3/rest.jpg" alt="">
+                            <dl>
+                                <dt>로데오 레스토랑</dt>
+                                <dd><i class="fas fa-map-marker-alt"></i><span class="hidden">위치</span> 킹바이킹 근처</dd>
+                                <dd class="rest_info">인디언풍 인테리어의 이국적인 정취를 느낄 수 있는 레스토랑입니다.
+                                    모든 입맛에 안성맞춤입니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>대표메뉴</dt>
+                                <dd class="menu_list">
+                                    <img src="images/content3/pork.jpg" alt="">
+                                    폭립
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md1">          
+                                        <img src="images/content3/pork.jpg" alt="">
+                                         <p>폭립</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>바베큐 폭립</td>
+                                                    <td>18,500원</td>
+                                                </tr>
+                                                                                         
+                                            </tbody>
+                                        </table>     
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                   
+                                     </div>
+                                </dd>
+                                <dd class="menu_list">
+                                    <img src="images/content3/beer.jpg" alt="">
+                                    맥주
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md2">          
+                                        <img src="images/content3/beer.jpg" alt="">
+                                         <p>맥주</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>생맥주</td>
+                                                    <td>4,500원</td>
+                                                </tr>
+                                                                                              
+                                            </tbody>
+                                        </table>    
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                             
+                                     </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="images/content3/rest_8.jpg" alt="">
+                            <dl>
+                                <dt>던킨도너츠</dt>
+                                <dd><i class="fas fa-map-marker-alt"></i><span class="hidden">위치</span> 뮤직라이트플래닛 근처</dd>
+                                <dd class="rest_info">서울랜드에서 만나는 다양한 도너츠와 깔끔한 커피!</dd>
+                            </dl>
+                            <dl>
+                                <dt>대표메뉴</dt>
+                                <dd class="menu_list">
+                                    <img src="images/content3/donut3.png" alt="">
+                                    도너츠
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md3">          
+                                        <img src="images/content3/donut3.png" alt="">
+                                         <p>도너츠</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>올리브 츄이스티</td>
+                                                    <td>4,500원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>카푸치노 츄이스티</td>
+                                                    <td>4,500원</td>
+                                                </tr>                                              
+                                            </tbody>
+                                        </table>       
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                      
+                                     </div>
+                                </dd>
+                                <dd class="menu_list">
+                                    <img src="images/content3/sand2.png" alt="">
+                                    샌드위치
+                                    <span></span>
+                                    <a class="more" href="#none">+more</a>
+                                    <div class="modal md4">          
+                                        <img src="images/content3/sand2.png" alt="">
+                                         <p>샌드위치</p>
+                                         <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>햄치즈 샌드위치</td>
+                                                    <td>4,000원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>       
+                                        <a class="closeBtn" href="#none"><i class="far fa-times-circle"></i></a>                    
+                                     </div>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="modal_box">
+        </div>
+    </article>
+
+    <? include "../common/sub_foot.html" ?>
+
+    <script src="js/modal_slide.js"></script>
+    <script src="common/js/tab.js"></script>
+    <script src="common/js/sticky.js"></script>
+</body>
+</html>

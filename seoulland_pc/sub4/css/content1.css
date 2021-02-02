@@ -1,0 +1,303 @@
+table,
+th,
+td {
+    border: 1px solid #e1e1e1;
+}
+
+table {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+th {
+    background: #f8f8f8;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+td {
+    line-height: 1.8em;
+    font-size: 16px;
+}
+
+.ticket_info_box {
+    position: relative;
+    height: 300px
+}
+
+.ticket_info {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 260px;
+    outline: 1px solid #ddd
+}
+
+.ticket_info a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 260px;
+}
+
+.ticket_info i {
+    display: block;
+    margin-top: 10px
+}
+
+.ticket_info li {
+    overflow: hidden;
+    position: absolute;
+    width: 660px;
+    height: 260px;
+    outline: 1px solid #ddd
+}
+
+.ticket_info li:first-of-type {
+    left: 0;
+    top: 0;
+    z-index: 1
+}
+
+.ticket_info li:nth-of-type(2) {
+    left: 660px;
+    top: 0;
+    z-index: 2
+}
+
+.ticket_info li:nth-of-type(3) {
+    left: 840px;
+    top: 0;
+    z-index: 3
+}
+
+.ticket_info li:nth-of-type(4) {
+    left: 1020px;
+    top: 0;
+    z-index: 4
+}
+
+.ticket_info li:first-of-type::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 64px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/content1/ticket.png);
+    background-size: 50px;
+}
+
+.ticket_info li:nth-of-type(2)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/content1/benefit.png);
+    background-size: 50px;
+}
+
+.ticket_info li:nth-of-type(3)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/content1/planet-earth.png);
+    background-size: 50px;
+}
+
+.ticket_info li:nth-of-type(4)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/content1/question.png);
+    background-size: 50px;
+}
+
+.ticket_info li p:first-of-type {
+    float: left;
+    padding-top: 126px;
+    width: 180px;
+    height: 240px;
+    background: #F0ECF0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.8em;
+}
+
+.ticket_info li p:nth-of-type(2) {
+    float: left;
+    padding: 0 40px;
+    width: 400px;
+    height: 240px;
+    background: #f8f8f8;
+    font-size: 18px;
+    line-height: 1.8em;
+    text-align: left;
+}
+
+.ticket_info li:nth-of-type(1) p:nth-of-type(2) {
+    padding-top: 60px;
+}
+
+.ticket_info li:nth-of-type(2) p:nth-of-type(2) {
+    padding-top: 20px;
+}
+
+.ticket_info li:nth-of-type(3) p:nth-of-type(2) {
+    padding-top: 70px;
+}
+
+.ticket_info li:nth-of-type(4) p:nth-of-type(2) {
+    padding-top: 100px;
+}
+
+.info {
+    line-height: 2em;
+    text-align: left;
+}
+
+.title_area h2 {
+    margin-bottom: 100px
+}
+
+.more_info {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.more_info li {
+    float: left;
+    position: relative;
+    width: 400px;
+    height: 225px;
+    background: pink;
+}
+
+.more_info li a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 225px;
+    background: rgba(0, 0, 0, .4);
+    color: #fff;
+    transition: all .5s;
+}
+
+.more_info li:hover a {
+    background: none
+}
+
+.more_info li span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -80px;
+    width: 160px;
+    border: 1px solid #fff;
+    font-size: 16px;
+}
+
+th,
+td {
+    padding: 24px
+}
+
+.content_area h3 {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+section {
+    overflow: hidden;
+    margin: 100px 0 160px;
+}
+
+section h3 {
+    position: relative;
+}
+
+.content_area h3::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 3px;
+    background: #fe4365;
+}
+
+.inform:first-of-type {
+    padding: 25px 0;
+    background: url(../images/content1/ticket.png) 90% 0 no-repeat;
+    background-size: 80px 80px
+}
+
+.inform:nth-of-type(2) {
+    background: url(../images/content1/benefit.png) 90% 0 no-repeat;
+    background-size: 80px 80px
+}
+
+.inform:nth-of-type(3) {
+    padding: 25px 0;
+    background: url(../images/content1/planet-earth.png) 90% 0 no-repeat;
+    background-size: 80px 80px
+}
+
+.inform:nth-of-type(4) {
+    padding: 30px 0;
+    background: url(../images/content1/question.png) 90% 0 no-repeat;
+    background-size: 80px 80px
+}
+
+.inform {
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 10px 0;
+    width: 1200px;
+    text-align: left;
+}
+
+.inform dt {
+    float: left;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.inform dt span {
+    padding: 8px 22px;
+    background: #f8f8f8;
+    border: 1px solid #e1e1e1;
+    border-radius: 24px;
+}
+
+.inform dd {
+    float: left;
+    width: 800px;
+    line-height: 1.8em;
+    font-size: 18px;
+    font-weight: 300;
+}

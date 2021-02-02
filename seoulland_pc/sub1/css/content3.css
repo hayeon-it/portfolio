@@ -1,0 +1,178 @@
+#map {
+    margin: 0 auto;
+    width: 100%;
+    height: 600px;
+}
+
+.content_area {
+    overflow: hidden;
+    font-size: 18px
+}
+
+.content_inner {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.content_inner>address {
+    margin-top: 60px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.content_inner>address i {
+    color: #fe4365
+}
+
+section {
+    overflow: hidden;
+    margin: 150px auto 100px;
+}
+
+section:first-of-type {
+    float: left;
+    margin-right: 100px;
+    width: 350px;
+}
+
+section:nth-of-type(2) {
+    float: left;
+    width: 750px;
+}
+
+section:nth-of-type(3) {
+    overflow: hidden;
+    clear: both;
+}
+
+section h3 {
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+section h3>i {
+    margin-right: 6px;
+    color: #fe4365;
+    font-size: 20px;
+}
+
+section p {
+    text-align: left;
+}
+
+section img {
+    display: block;
+    margin: 36px 0 36px 5px;
+    box-shadow: 1px 1px 5px 1px #ccc;
+    border-radius: 10px;
+}
+
+section .more {
+    display: block;
+    padding: 10px 4px;
+    width: 170px;
+    border: 2px solid #19CE60;
+    border-radius: 30px;
+    color: #19CE60;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all .5s;
+}
+
+section .more:hover {
+    background: #19CE60;
+    color: #fff
+}
+
+section .more span {
+    font-size: 12px;
+    background: #19CE60;
+    padding: 0 3px;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 4px;
+}
+
+section dl {
+    overflow: hidden;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+section dt {
+    float: left;
+    margin-right: 20px;
+    padding: 5px 15px;
+    width: 80px;
+    background: #f8f8f8;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-weight: 400;
+    text-align: center;
+}
+
+section dd {
+    float: left;
+    width: 618px;
+    line-height: 2em;
+}
+
+table {
+    float: left;
+    margin-bottom: 50px;
+    width: 550px;
+}
+
+table:first-of-type {
+    margin-right: 90px
+}
+
+th,
+td {
+    padding: 20px;
+    border: 1px solid #ccc
+}
+
+th {
+    background: #f8f8f8;
+    font-weight: 400;
+}
+
+.parking_info {
+    clear: both;
+    padding: 30px 35px;
+    border: 1px solid #ccc
+}
+
+.parking_info dd:first-of-type {
+    margin-top: 20px
+}
+
+.parking_info dd {
+    position: relative;
+    margin: 5px 0;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.parking_info dd::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 5px;
+    height: 5px;
+    background: #ccc;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.parking_info dt {
+    padding: 0;
+    width: 150px;
+    background: none;
+    border: none;
+}

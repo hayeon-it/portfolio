@@ -1,0 +1,81 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>서울랜드-소셜스토리</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- 웹폰트는 css 위에 -->
+    <link rel="stylesheet" href="../common/css/common.css" /> <!-- Header, Footer -->
+    <link rel="stylesheet" href="common/css/sub2common.css"> <!-- 1 Depth의 공통 css -->
+    <link rel="stylesheet" href="css/content4.css" /> <!-- 어트랙션 css -->
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/58ed643491.js" crossorigin="anonymous"></script>
+    <!--[if IE9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <? include "../common/sub_head.html" ?>
+
+    <!-- MAIN VISUAL -->
+    <div class="visual_box"><img src="common/images/visual_2.jpg" alt=""></div>
+    <!-- SUB NAV -->
+    <div class="subnav_box">
+        <h3>즐길거리</h3>
+        <p>모두가 함께 즐기는 서울랜드</p>
+        <ul class="sub_nav">
+            <li><a href="sub2_1.html">어트랙션</a></li>
+            <li><a href="sub2_2.html">연간축제</a></li>
+            <li><a href="sub2_3.html">레스토랑</a></li>
+            <li><a href="sub2_4.html" class="current">소셜스토리</a></li>
+        </ul>
+    </div>
+    <!-- CONTENT -->
+    <article id="content">
+        <div class="title_area">
+            <div class="line_map">
+                <span>Home </span>&gt;<span> 즐길거리 </span>&gt;<strong> 소셜스토리</strong>
+            </div>
+            <h2>소셜스토리</h2>
+        </div>
+        <div class="content_area">
+            <div class="youtube">
+                <h3>Youtube</h3>
+                <a href="https://www.youtube.com/channel/UCAbIua3XTxwoJOw_toFg36Q?view_as=subscriber"> 구독</a>
+                <iframe src="https://www.youtube.com/embed/E5gONoWDYa8" title="서울랜드 미니어쳐"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/2fHXcshAl0g" title="서울랜드의 겨울"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="facebook">
+                <h3>Facebook</h3>
+                <a href="http://www.facebook.com/seoullandpark"> 좋아요</a>
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous"
+                    src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v7.0" nonce="rXunXDvR"></script>
+                <div class="fb-page" data-href="https://www.facebook.com/seoullandpark" data-tabs="timeline"
+                    data-width="500" data-height="640" data-small-header="true" data-adapt-container-width="true"
+                    data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/seoullandpark" class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/seoullandpark">서울랜드</a></blockquote>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <? include "../common/sub_foot.html" ?>
+
+</body>
+</html>

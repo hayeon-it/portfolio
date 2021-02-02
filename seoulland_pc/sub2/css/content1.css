@@ -1,0 +1,352 @@
+.map_img {
+  overflow: hidden;
+  border: 2px solid #eee;
+  width: 600px;
+  float: left;
+  cursor: move
+}
+
+.map_img img {
+  transition: all .3s
+}
+
+.tab_box {
+  background: #fff;
+  height: 50px;
+  padding: 10px 0;
+  transition: all .8s;
+}
+
+.navOn {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.intro {
+  position: relative;
+  top: 0;
+  left: 50%;
+  margin: 100px 0 100px -1000px;
+  width: 2000px;
+  background: url(../images/content1/back.jpg) no-repeat;
+}
+
+.intro p {
+  margin: 0 auto;
+  padding: 120px 0 0 20px;
+  width: 500px;
+  height: 300px;
+  background: rgba(255, 255, 255, .7);
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.map_inner {
+  margin: 0 auto;
+  padding: 70px 0;
+  width: 1200px;
+}
+
+.content_area {
+  font-size: 18px;
+}
+
+.content_area>section {
+  margin: 150px 0;
+}
+
+.content_area>section>section:nth-of-type(1) {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.content_area>section>section:nth-of-type(2) {
+  background: #f8f8f8
+}
+
+.content_area section {
+  position: relative;
+}
+
+section h3,
+section h4 {
+  position: relative;
+  margin-bottom: 50px;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+section h3 {
+  margin-bottom: 120px;
+  font-size: 28px;
+  text-align: center;
+}
+
+section h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  background: url(../images/content1/ic.png) no-repeat;
+  background-size: 30px 30px
+}
+
+.contlist {
+  display: none;
+}
+
+.content_area .attr_list {
+  overflow: hidden;
+  position: relative;
+}
+
+.content_area .attr_list>li:not(.first_attr) {
+  float: left;
+  position: relative;
+  margin-left: 2px;
+  margin-right: 30px;
+  margin-bottom: 100px;
+  padding: 20px;
+  width: 336px;
+  height: 420px;
+  outline: 1px solid #ddd;
+}
+
+.content_area .attr_list>li:not(.first_attr) dd {
+  text-align: center;
+}
+
+.content_area .attr_list li:nth-of-type(3n + 1) {
+  margin-right: 0;
+}
+
+.content_area .attr_list img {
+  width: 338px;
+  height: 270px;
+}
+
+.content_area .attr_list dl {
+  overflow: hidden;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.content_area .attr_list dt {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.content_area .attr_list dd {
+  font-size: 16px;
+  line-height: 2em;
+  text-align: left;
+}
+
+.content_area .attr_list .first_attr {
+  overflow: hidden;
+  margin: 0 auto 100px;
+  width: 1200px;
+  height: 360px;
+}
+
+.content_area .attr_list .first_attr img {
+  float: left;
+  margin-right: 70px;
+  width: 500px;
+  height: 360px;
+}
+
+.content_area .attr_list .first_attr dl {
+  padding: 30px 10px;
+  width: 580px;
+  border-top: 2px solid black;
+}
+
+.content_area .attr_list .first_attr dt {
+  padding-bottom: 16px;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.content_area .attr_list .attr_list .first_attr dd {
+  font-size: 16px;
+  line-height: 1.8em;
+  text-align: justify;
+}
+
+.content_area .attr_list .first_attr .info {
+  overflow: hidden;
+}
+
+.content_area .attr_list .first_attr .info li {
+  float: left;
+  position: relative;
+  margin: 20px 25px 0 0;
+  padding: 0 5px;
+  width: 165px;
+  height: 160px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.content_area .attr_list .first_attr .info li:last-of-type {
+  margin-right: 0;
+}
+
+.content_area .attr_list .first_attr .info li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 26px;
+  left: 50%;
+  margin-left: -18px;
+  width: 36px;
+  height: 36px;
+}
+
+.content_area .attr_list .first_attr .info li span {
+  display: block;
+  margin: 75px 0 0 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.content_area .attr_list .first_attr .info li:nth-of-type(1)::before {
+  background: url(../images/content1/info_1.png);
+  background-size: 36px
+}
+
+.content_area .attr_list .first_attr .info li:nth-of-type(2)::before {
+  background: url(../images/content1/info_3.png);
+  background-size: 36px
+}
+
+.content_area .attr_list .first_attr .info li:nth-of-type(3)::before {
+  background: url(../images/content1/info_2.png);
+  background-size: 36px
+}
+
+.content_area .attr_map {
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+  margin: 0 auto;
+  width: 1160px;
+  box-shadow: 1px 1px 7px 1px #ddd;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.content_area .attr_map img {
+  overflow: hidden;
+  float: left;
+  width: 600px;
+  height: 400px;
+}
+
+.content_area .attr_map .plus,
+.content_area .attr_map .minus {
+  display: block;
+  position: absolute;
+  top: 310px;
+  left: 560px;
+  width: 30px;
+  height: 30px;
+}
+
+.content_area .attr_map .minus {
+  top: 360px;
+}
+
+.content_area .attr_map i {
+  padding: 10px;
+  background: rgba(255, 255, 255, .8);
+  color: #333;
+  border: 1px solid #ddd;
+  transition: all .5s;
+}
+
+.content_area .attr_map i:hover {
+  background: #fe4365;
+  color: #fff;
+  border-color: #ff4668
+}
+
+.content_area .attr_map ol {
+  float: left;
+  margin-top: 16px;
+  width: 500px;
+}
+
+.content_area .attr_map ol li {
+  position: relative;
+  padding-left: 120px;
+  margin: 24px 0;
+  text-align: left;
+}
+
+.content_area .attr_map ol li a:hover {
+  color: #fe4365
+}
+
+.content_area .attr_map ol li a.current {
+  color: #fe4365;
+  font-weight: 400;
+}
+
+.content_area.content_area .attr_map ol li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 60px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.content_area.content_area .attr_map ol li:first-of-type::before {
+  background: url(../images/content1/one.png) no-repeat;
+  background-size: 28px;
+}
+
+.content_area.content_area .attr_map ol li:nth-of-type(2)::before {
+  background: url(../images/content1/two.png) no-repeat;
+  background-size: 28px;
+}
+
+.content_area .attr_map ol li:nth-of-type(3)::before {
+  background: url(../images/content1/three.png) no-repeat;
+  background-size: 28px;
+}
+
+.content_area .attr_map ol li:nth-of-type(4)::before {
+  background: url(../images/content1/four.png) no-repeat;
+  background-size: 28px;
+}
+
+.content_area .attr_map ol li:nth-of-type(5)::before {
+  background: url(../images/content1/five.png) no-repeat;
+  background-size: 28px;
+}
+
+.content_area .attr_map ol li:nth-of-type(6)::before {
+  background: url(../images/content1/six.png) no-repeat;
+  background-size: 28px;
+}
+
+.content_area .attr_map ol li:nth-of-type(7)::before {
+  background: url(../images/content1/seven.png) no-repeat;
+  background-size: 28px;
+}

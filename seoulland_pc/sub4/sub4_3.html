@@ -1,0 +1,167 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>서울랜드-제휴카드</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- 웹폰트는 css 위에 -->
+    <link rel="stylesheet" href="../common/css/common.css" /> <!-- Header, Footer -->
+    <link rel="stylesheet" href="common/css/sub4common.css"> <!-- 1 Depth의 공통 css -->
+    <link rel="stylesheet" href="css/content3.css" /> <!-- 어트랙션 css -->
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/58ed643491.js" crossorigin="anonymous"></script>
+
+    <!--[if IE9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <? include "../common/sub_head.html" ?>
+
+    <!-- MAIN VISUAL -->
+    <div class="visual_box"><img src="common/images/visual_3.jpg" alt=""></div>
+    <!-- SUB NAV -->
+    <div class="subnav_box">
+        <h3>요금/혜택</h3>
+        <p>요금 및 혜택을 알아보세요</p>
+        <ul class="sub_nav">
+            <li><a href="sub4_1.html">이용요금</a></li>
+            <li><a href="sub4_2.html">할인혜택</a></li>
+            <li><a href="sub4_3.html" class="current">제휴카드</a></li>
+        </ul>
+    </div>
+    <!-- CONTENT -->
+    <article id="content">
+        <div class="title_area">
+            <div class="line_map">
+                <span>Home </span>&gt;<span> 요금혜택 </span>&gt;<strong> 제휴카드</strong>
+            </div>
+            <h2>제휴카드</h2>
+        </div>
+        <div class="content_area">
+            <div class="intro">
+                <p>제휴카드로 더 저렴하게 서울랜드를 즐겨보세요</p>
+            </div>
+            <section class="shinhan">
+                <h3>신한카드</h3>
+                <ul class="card_list">
+                    <li>
+                        <dl>
+                            <dt>네이버페이 라인프렌즈 신한카드</dt>
+                            <dd><strong>이용혜택</strong>
+                                - 자유이용권 30% 할인<br>(본인에 한함. 전 놀이공원 1일 1회)
+                            </dd>
+                            <dd><strong>이용조건</strong>
+                                - 서비스 이용 직전월 해당카드 이용금액 25만원 이상<br>
+                                - 1일 1회 연간 각 놀이공원 2회 이용가능<br>
+                                - 타 놀이공원 당일 중복할인 불가</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>카카오페이 신한 체크카드</dt>
+                            <dd><strong>이용혜택</strong>
+                                - 자유이용권 35% 할인<br>(본인에 한함. 전 놀이공원 1일 1회)
+                            </dd>
+                            <dd><strong>이용조건</strong>
+                                - 서비스 이용 직전월 해당카드 이용금액 30만원 이상<br>
+                                - 1일 1회 연간 각 놀이공원 2회 이용가능<br>
+                                - 타 놀이공원 당일 중복할인 불가</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>카카오뱅크 신한카드</dt>
+                            <dd><strong>이용혜택</strong>
+                                - 자유이용권 50% 할인<br>(본인에 한함. 전 놀이공원 1일 1회)
+                            </dd>
+                            <dd><strong>이용조건</strong>
+                                - 서비스 이용 직전월 해당카드 이용금액 40만원 이상<br>
+                                - 1일 1회 연간 각 놀이공원 3회 이용가능<br>
+                                - 타 놀이공원 당일 중복할인 불가</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>SOL Deep Dream 신한카드 체크</dt>
+                            <dd><strong>이용혜택</strong>
+                                - 자유이용권 30% 할인<br>(본인에 한함. 전 놀이공원 1일 1회)
+                            </dd>
+                            <dd><strong>이용조건</strong>
+                                - 서비스 이용 직전월 해당카드 이용금액 30만원 이상 <br>
+                                - 1일 1회 연간 각 놀이공원 2회 이용가능<br>
+                                - 타 놀이공원 당일 중복할인 불가</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section class="samsung">
+                <h3>삼성카드</h3>
+                <ul class="card_list">
+                    <li>
+                        <dl>
+                            <dt>삼성카드 4 V3</dt>
+                            <dd><strong>이용혜택</strong>
+                                - 자유이용권 50% 할인<br>(본인에 한함. 전 놀이공원 1일 1회)
+                            </dd>
+                            <dd><strong>이용조건</strong>
+                                - 서비스 이용 직전월 해당카드 이용금액 40만원 이상 이용<br>
+                                - 1일 1회 연간 각 놀이공원 3회 이용가능<br>
+                                - 타 놀이공원 당일 중복할인 불가</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>삼성카드 2 V4</dt>
+                            <dd><strong>이용혜택</strong>
+                                - 자유이용권 45% 할인<br>(본인에 한함. 전 놀이공원 1일 1회)
+                            </dd>
+                            <dd><strong>이용조건</strong>
+                                - 서비스 이용 직전월 해당카드 이용금액 35만원 이상 이용<br>
+                                - 1일 1회 연간 각 놀이공원 3회 이용가능<br>
+                                - 타 놀이공원 당일 중복할인 불가</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>카카오뱅크 삼성카드</dt>
+                            <dd><strong>이용혜택</strong>
+                                - 자유이용권 45% 할인<br>(본인에 한함. 전 놀이공원 1일 1회)
+                            </dd>
+                            <dd><strong>이용조건</strong>
+                                - 서비스 이용 직전월 해당카드 이용금액 30만원 이상 이용 <br>
+                                - 1일 1회 연간 각 놀이공원 3회 이용가능<br>
+                                - 타 놀이공원 당일 중복할인 불가</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>삼성카드 taptap O</dt>
+                            <dd><strong>이용혜택</strong>
+                                - 자유이용권 50% 할인<br>(본인에 한함. 전 놀이공원 1일 1회)
+                            </dd>
+                            <dd><strong>이용조건</strong>
+                                - 서비스 이용 직전월 해당카드 이용금액 40만원 이상 이용<br>
+                                - 1일 1회 연간 각 놀이공원 3회 이용가능<br>
+                                - 타 놀이공원 당일 중복할인 불가</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </article>
+
+    <? include "../common/sub_foot.html" ?>
+
+</body>
+</html>

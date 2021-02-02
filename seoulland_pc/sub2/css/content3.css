@@ -1,0 +1,273 @@
+.modal_box {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    opacity: 0.4;
+}
+
+.modal {
+    overflow: hidden;
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 1001;
+    margin-left: -350px;
+    margin-top: -150px;
+    padding: 20px;
+    width: 700px;
+    height: 300px;
+    background: #fff;
+    transition: all .5s;
+    outline: 3px solid #fe4365;
+}
+
+.modal img {
+    float: left;
+    margin-right: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+.modal p {
+    float: left;
+    margin: 5px 0 30px;
+    width: 350px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.modal p:first-of-type {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.modal .closeBtn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    color: #333;
+    font-size: 28px
+}
+
+table {
+    width: 320px
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-right: 0;
+    border-left: 0;
+    text-align: left;
+}
+
+.tab_box {
+    background: #fff;
+    height: 50px;
+    padding: 10px 0;
+    transition: all .8s
+}
+
+.navOn {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.intro {
+    position: relative;
+    top: 0;
+    left: 50%;
+    margin: 100px 0 100px -1000px;
+    width: 2000px;
+    background: url(../images/content3/intro_2.jpg) no-repeat;
+}
+
+.intro p {
+    margin: 0 auto;
+    padding: 120px 0 0 60px;
+    width: 500px;
+    height: 300px;
+    background: rgba(255, 255, 255, .7);
+    text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.content_inner>section {
+    margin: 100px 0
+}
+
+.contlist {
+    display: none;
+}
+
+section h3 {
+    position: relative;
+    padding-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 120px;
+    text-align: left;
+    font-size: 28px;
+    text-align: center;
+}
+
+section h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 3px;
+    background: #fe4365;
+}
+
+.restaurant_list {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.restaurant_list li {
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 150px 0;
+    width: 1200px;
+}
+
+.restaurant_list li:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+.restaurant_list li>img {
+    float: left;
+    margin: 26px 100px 0 0;
+    width: 540px;
+}
+
+.restaurant_list li dl {
+    overflow: hidden;
+    float: left;
+    position: relative;
+    width: 560px;
+}
+
+.restaurant_list li dl:first-of-type {
+    border-top: 2px solid black
+}
+
+.restaurant_list li dt {
+    margin: 30px 0 5px 0;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.restaurant_list li .menu_list {
+    border: 1px solid #eee;
+}
+
+.restaurant_list li dl:first-of-type dd i {
+    color: red;
+}
+
+.restaurant_list li dl:first-of-type dd:first-of-type {
+    position: absolute;
+    top: 30px;
+    right: 5px;
+    border: 0;
+    text-align: right;
+    color: #666;
+    font-size: 14px;
+}
+
+.restaurant_list li dl .rest_info {
+    margin-top: 16px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.restaurant_list li dl:last-of-type dt {
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+.restaurant_list li .menu_list {
+    float: left;
+    position: relative;
+    padding: 20px 0;
+    width: 250px;
+    height: 160px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.restaurant_list li .menu_list span {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 222px;
+    background: rgba(240, 92, 100, 0.8);
+    opacity: 0;
+    transition: all .5s
+}
+
+.restaurant_list li .menu_list:hover span {
+    opacity: 1;
+}
+
+.restaurant_list li .menu_list .more {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 82px;
+    margin-left: -60px;
+    padding: 5px 0 7px;
+    width: 120px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    opacity: 0;
+    transition: all .5s;
+    border: 2px solid #fff;
+    border-radius: 30px
+}
+
+.restaurant_list li .menu_list:hover .more {
+    opacity: 1;
+}
+
+.restaurant_list li .menu_list .more:hover {
+    background: #fff;
+    color: #333
+}
+
+.restaurant_list li .menu_list:nth-of-type(1) {
+    margin-right: 30px
+}
+
+.restaurant_list li .menu_list>img {
+    display: block;
+    margin: 0 auto 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}

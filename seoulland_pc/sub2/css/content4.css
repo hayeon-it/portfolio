@@ -1,0 +1,73 @@
+.content_area {
+    overflow: hidden;
+    width: 1200px
+}
+
+.intro {
+    padding: 50px 0;
+    margin: 10px 0 100px;
+    border-bottom: 1px solid #ccc;
+}
+
+.intro p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+iframe {
+    width: 540px;
+    height: 300px;
+}
+
+iframe:first-of-type {
+    margin-bottom: 40px
+}
+
+.content_area .youtube {
+    float: left;
+    position: relative;
+    padding: 30px;
+    margin-bottom: 130px;
+    width: 540px;
+    border: 1px solid #ccc
+}
+
+.content_area .youtube h3,
+.content_area .facebook h3 {
+    margin-left: 10px;
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.content_area .youtube a,
+.content_area .facebook a {
+    position: absolute;
+    top: 26px;
+    right: 24px;
+    padding: 10px 20px;
+    background: red;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.content_area .facebook a {
+    background: blue;
+}
+
+.content_area .facebook {
+    float: right;
+    position: relative;
+    padding: 30px;
+    margin-left: 20px;
+    margin-bottom: 130px;
+    width: 500px;
+    border: 1px solid #ccc
+}
+
+.content_area>div i {
+    font-size: 40px
+}

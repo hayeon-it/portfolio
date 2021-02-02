@@ -1,0 +1,100 @@
+section {
+    margin: 0 0 100px;
+}
+
+section h3 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    position: relative;
+    margin: 100px 0
+}
+
+section h3::after {
+    display: block;
+    content: '';
+    background: #fe4365;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -25px
+}
+
+section {
+    overflow: hidden;
+}
+
+section ul {
+    padding: 10px
+}
+
+section li {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+section ul li p {
+    padding: 20px 30px;
+    border: 1px solid black;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+section li .trigger {
+    display: block;
+    position: relative;
+}
+
+section li .trigger span {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+section li .trigger span i {
+    font-size: 28px;
+    color: #fa98aa;
+    transition: all .5s;
+}
+
+section li .trigger span:hover i {
+    color: #fe4365
+}
+
+section li .as {
+    display: none;
+    border-top: none;
+    background: #eee;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+section dl {
+    text-align: left;
+    font-size: 18px;
+    line-height: 2em;
+    margin: 10px 60px 10px 10px;
+    box-shadow: 1px 1px 10px 1px #ddd;
+    border-radius: 20px;
+}
+
+section dt {
+    font-size: 22px;
+    font-weight: 400;
+    padding: 30px 40px;
+    margin-bottom: 20px;
+    border: 1px solid red;
+}
+
+section dd {
+    display: none;
+    border-top: 0;
+    padding: 30px 40px 30px 40px;
+    margin-bottom: 20px;
+    border: 1px solid blue
+}

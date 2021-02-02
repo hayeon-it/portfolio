@@ -1,0 +1,277 @@
+.content_area {
+    width: 1200px;
+}
+
+section {
+    text-align: left;
+}
+
+.content_area>section {
+    margin: 140px 0 230px;
+}
+
+.content_area>section>section {
+    margin: 90px 0;
+    padding: 50px;
+    border: 1px solid #ddd
+}
+
+section h3 {
+    position: relative;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+section h3::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 2px;
+    background: #fe4365;
+}
+
+section dl {
+    margin: 80px 0;
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+section dt {
+    margin-bottom: 80px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+section dt:nth-of-type(2) {
+    margin-top: 80px;
+}
+
+section ol {
+    overflow: hidden;
+}
+
+section .east {
+    margin: 0 auto;
+    width: 1018px;
+}
+
+section ol li {
+    float: left;
+    position: relative;
+    margin: 0 100px 50px 0;
+    width: 190px;
+    height: 190px;
+    background: #fff;
+    border: 8px solid #fca2b3;
+    border-radius: 50%;
+    text-align: center;
+}
+
+section .east li {
+    width: 190px;
+    margin: 0 200px 50px 0;
+}
+
+section .front {
+    overflow: hidden;
+    position: relative;
+    width: 1124px;
+    margin: 0 auto
+}
+
+section ol li span:first-of-type {
+    display: block;
+    position: relative;
+    top: 15%;
+    width: 30px;
+    left: 50%;
+    margin-left: -15px;
+    border-bottom: 4px solid #fe4365;
+    color: #fe4365;
+    font-weight: 700;
+}
+
+section ol li span:nth-of-type(2) {
+    display: block;
+    position: relative;
+    top: 28%;
+    width: 130px;
+    left: 50%;
+    margin-left: -65px;
+}
+
+section ol li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 260px;
+    width: 24px;
+    height: 24px;
+}
+
+section .east li::after {
+    left: 300px
+}
+
+section .front li:nth-of-type(4),
+section .east li:nth-of-type(3) {
+    margin-right: 0;
+}
+
+section .front li:nth-of-type(5) {
+    margin-left: 170px
+}
+
+section .east li:nth-of-type(4) {
+    margin-left: 200px
+}
+
+section ol li:last-of-type::after {
+    display: none;
+}
+
+section h4 {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+section>section h4::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+}
+
+section>section:nth-of-type(1) h4::before {
+    background: url(../images/content1/number1.png) no-repeat;
+    background-size: 30px;
+}
+
+section>section:nth-of-type(2) h4::before {
+    background: url(../images/content1/number2.png) no-repeat;
+    background-size: 30px;
+}
+
+section>section:nth-of-type(3) h4::before {
+    background: url(../images/content1/number3.png) no-repeat;
+    background-size: 30px;
+}
+
+section>section:nth-of-type(4) h4::before {
+    background: url(../images/content1/number4.png) no-repeat;
+    background-size: 30px;
+}
+
+section>section:nth-of-type(5) h4::before {
+    background: url(../images/content1/number5.png) no-repeat;
+    background-size: 30px;
+}
+
+section .prohibit {
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+section .prohibit li {
+    float: left;
+    padding: 50px 0 0;
+    margin: 0 50px 30px 0;
+    width: 326px;
+    height: 240px;
+    background: #f8f8f8;
+    border: 1px solid #eee;
+    text-align: center;
+    font-size: 16px
+}
+
+section .prohibit li p {
+    margin-top: 30px;
+    padding: 0 22px
+}
+
+section .prohibit li:nth-of-type(3n) {
+    margin-right: 0
+}
+
+section .prohibit img {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    background: #eee;
+    border-radius: 50%;
+}
+
+section .prohibit span {
+    display: block;
+    color: #fe4365;
+    margin-top: 15px
+}
+
+section>p {
+    position: relative;
+    padding-left: 20px;
+    margin: 18px 0;
+    font-size: 18px;
+}
+
+section>p>span {
+    display: block;
+    color: #fe4365;
+    margin-top: 10px
+}
+
+section>p::before,
+section .ban li::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background: #ccc;
+    border-radius: 50%;
+    font-weight: normal;
+}
+
+section .ban {
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+section .ban li {
+    float: left;
+    position: relative;
+    margin: 15px 48px 15px 0;
+    padding: 40px;
+    width: 440px;
+    height: 70px;
+    background: #f8f8f8;
+    border: 1px solid #eee;
+    font-size: 18px
+}
+
+section .ban li:nth-of-type(2n) {
+    margin-right: 0
+}
+
+section .ban li::before {
+    display: none;
+}
+
+section .ban li i {
+    margin-right: 10px
+}

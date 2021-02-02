@@ -1,0 +1,39 @@
+#content .info_list li {
+    width: 339px;
+    float: left;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 35px 5px 0;
+    transition: all 0.5s ease;
+  }
+  
+  #content .info_list li img {
+    width: 339px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  #content .info_list li:hover {
+    border-color: #fe4365;
+    box-shadow: 2px 2px 5px 2px #ccc;
+  }
+  
+  #content .info_list li:nth-of-type(2) {
+    margin-top: 50px;
+  }
+  
+  #content .info_list li:last-of-type {
+    margin-right: 5px;
+  }
+  
+  #content .info_list li dl {
+    padding: 20px;
+  }
+  
+  #content .info_list li dt {
+    text-align: left;
+  }
+  
+  #content .info_list li dd {
+    text-align: justify;
+  }

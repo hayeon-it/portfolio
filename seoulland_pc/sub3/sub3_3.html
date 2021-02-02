@@ -1,0 +1,296 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>서울랜드-프로그램</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- 웹폰트는 css 위에 -->
+    <link rel="stylesheet" href="../common/css/common.css" /> <!-- Header, Footer -->
+    <link rel="stylesheet" href="common/css/sub3common.css"> <!-- 1 Depth의 공통 css -->
+    <link rel="stylesheet" href="css/content3.css" /> <!-- 어트랙션 css -->
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/58ed643491.js" crossorigin="anonymous"></script>
+    <!--[if IE9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <? include "../common/sub_head.html" ?>
+
+    <!-- MAIN VISUAL -->
+    <div class="visual_box"><img src="common/images/visual_1.jpg" alt=""></div>
+    <!-- SUB NAV -->
+    <div class="subnav_box">
+        <h3>이용정보</h3>
+        <ul class="sub_nav">
+            <li><a href="sub3_1.html">이용안내</a></li>
+            <li><a href="sub3_2.html">운영시간</a></li>
+            <li><a href="sub3_3.html" class="current">프로그램</a></li>
+        </ul>
+    </div>
+    <!-- CONTENT -->
+    <article id="content">
+        <div class="title_area">
+            <div class="line_map">
+                <span>Home </span>&gt;<span> 이용정보 </span>&gt;<strong> 프로그램</strong>
+            </div>
+            <h2>프로그램</h2>
+        </div>
+        <div class="content_area">
+            <ul class="tab_menu">
+                <li><a href="#tab" class="tab tab1">학생 단체</a> </li>
+                <li><a href="#tab" class="tab tab2">기업체 행사</a> </li>
+            </ul>
+            <section class="students contlist">
+                <h3>학생 단체</h3>
+                <section class="info">
+                    <h4>학생단체 상담 및 예약안내</h4>
+                    <dl>
+                        <dt>
+                            <img src="images/content3/team.png" alt="">
+                            담당부서</dt>
+                        <dd>서울랜드 마케팅팀</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="images/content3/fax1.png" alt="">
+                            연락처</dt>
+                        <dd>TEL 02-509-6274~9 <br> FAX 02-509-6192</dd>
+                    </dl>
+                </section>
+                <section>
+                    <h4>프로그램 목록</h4>
+                    <ol class="prog_list">
+                        <li>
+                            <dl>
+                                <dt>독립기념관과 함께하는 서울랜드 항일 역사체험관
+                                    '역사 속 저항 시인들'
+                                </dt>
+                                <dd>
+                                    나라를 지키기 위해 일본군에게 독립운동을
+                                    펼쳤던 아름다운 시인의 역사적 발자취를 담아보았습니다.
+                                    이육사, 윤동주, 한용운, 이상화 시인까지 그들의 독립정신과
+                                    시의 감동을 느껴보시길 바랍니다.
+                                </dd>
+                                <dd>
+                                    <div>
+                                        <p><span>기간</span> 연중</p>
+                                        <p><span>대상</span> 초등학생, 중학생, 고등학생</p>
+                                        <p><span>인원</span> 제한없음</p>
+                                    </div>
+                                    <div>
+                                        <p><span>소요시간</span> 20분</p>
+                                        <p><span>장소</span> 서울랜드 항일 역사체험관</p>
+                                        <p><span>요금</span> 무료</p>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>쥬라기랜드 "공룡연구소의 비밀"
+                                </dt>
+                                <dd>
+                                    18m 크기의 거대한 공룡이 서울랜드에 나타났다!
+                                    서울랜드 쥬라기랜드에서 살아 움직이는 다양한 공룡들을 직접 만날 수 있으며
+                                    5D 입체영상까지 무료로 관람 가능합니다.
+                                    쥬라기랜드 화석발굴장에 숨겨져있는 공룡알을 찾아보세요!
+                                </dd>
+                                <dd>
+                                    <div>
+                                        <p><span>기간</span> 연중</p>
+                                        <p><span>대상</span> 유아, 초등학생</p>
+                                        <p><span>인원</span> 100명</p>
+                                    </div>
+                                    <div>
+                                        <p><span>소요시간</span> 20분</p>
+                                        <p><span>장소</span> 쥬라기랜드, 5D 타임머신</p>
+                                        <p><span>요금</span> 무료 / 공룡알 찾기 체험 (1,000원) </p>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>셰프 아카데미
+                                </dt>
+                                <dd>
+                                    셰프아카데미는 요리사 직업 체험으로 청소년 진로체험에
+                                    최적화된 프로그램입니다.
+                                    서울랜드 장미의 언덕에서 배우는 떡갈비 스테이크 만들기!
+                                    친구들과 요리를 만들어보고 식사까지 해결 가능한 체험
+                                    프로그램입니다.
+                                </dd>
+                                <dd>
+                                    <div>
+                                        <p><span>기간</span> 연중 </p>
+                                        <p><span>대상</span> 초등학생, 중학생, 고등학생</p>
+                                        <p><span>인원</span> 180명/회</p>
+                                    </div>
+                                    <div>
+                                        <p><span>소요시간</span> 80분</p>
+                                        <p><span>장소</span> 장미의 언덕</p>
+                                        <p><span>요금</span> 7,000원</p>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>진로콘서트 ('컬쳐띵크'와 함께하는 "Talk & Music")
+                                </dt>
+                                <dd>
+                                    학생들이 열광하는 힙합공연과 뮤지션들이 각자의
+                                    꿈을 찾기 위해 겪었던 경험과 노력을 들어보는 리얼
+                                    힙합 토크 페스티벌!
+                                    '자유학년제' 활동 중 진로활동에 최적화된 체험 프로그램입니다.
+                                </dd>
+                                <dd>
+                                    <div>
+                                        <p><span>기간</span> 연중</p>
+                                        <p><span>대상</span> 중학생, 고등학생</p>
+                                        <p><span>인원</span> 800명/회</p>
+                                    </div>
+                                    <div>
+                                        <p><span>소요시간</span> 60분</p>
+                                        <p><span>장소</span> 이벤트홀</p>
+                                        <p><span>요금</span> 5,000원</p>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ol>
+                </section>
+                <section>
+                    <h4>PDF 다운로드</h4>
+                    <dl class="link">
+                        <dt>유치원, 어린이집, 학원, 체육관, 종교단체, 복지관 단체 프로그램</dt>
+                        <dd>
+                            <a href="https://www.seoulland.co.kr/images/group/2020_baby_spring.pdf">PDF 보기 <i
+                                    class="fas fa-file-pdf"></i></a>
+                            <a href="images/content3/유치원_어린이집.zip">다운로드<i class="fas fa-file-download"></i></a>
+                        </dd>
+                    </dl>
+                    <dl class="link">
+                        <dt>초등학교 단체 프로그램</dt>
+                        <dd>
+                            <a href="https://www.seoulland.co.kr/images/group/2020_child_spring.pdf">PDF 보기 <i class="fas fa-file-pdf"></i></a>
+                            <a href="images/content3/초등.zip">다운로드 <i class="fas fa-file-download"></i></a></dd>
+                    </dl>
+                    <dl class="link">
+                        <dt>중, 고등학교 단체 프로그램</dt>
+                        <dd>
+                            <a href="https://www.seoulland.co.kr/images/group/2020_stud_spring.pdf">PDF 보기 <i class="fas fa-file-pdf"></i></a>
+                            <a href="images/content3/중고등.zip">다운로드 <i class="fas fa-file-download"></i></a></dd>
+                    </dl>
+                </section>
+            </section>
+            <section class="company contlist">
+                <h3>기업체 행사</h3>
+                <section class="info">
+                    <h4>기업체 및 단체 상담 및 예약</h4>
+                    <dl>
+                        <dt>
+                            <img src="images/content3/team.png" alt="">
+                            담당부서</dt>
+                        <dd>서울랜드 마케팅팀</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="images/content3/fax1.png" alt="">
+                            연락처</dt>
+                        <dd>TEL 02-509-6214, 6277, 6281 <br> FAX 02-509-6192</dd>
+                    </dl>
+                </section>
+                <section>
+                    <h4>프로그램 목록</h4>
+                    <ol class="prog_list">
+                        <li>
+                            <dl>
+                                <dt>치맥나이트 특별패키지</dt>
+                                <dd>
+                                    참숯으로 완성한 치킨, 시원한 생맥주, 감미로운 라이브 음악까지~
+                                    오직 서울랜드에서만 즐길 수 있는 아주 특별한 행사!
+                                </dd>
+                                <dd>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>구분</th>
+                                                <th>상품구성</th>
+                                                <th>판매가격</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>치맥나이트패키지<br> 2인권</td>
+                                                <td>서울랜드 파크이용권 2매 + <br>생맥주 4잔 + 치맥나이트 메뉴 중 택 1</td>
+                                                <td>58,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>치맥나이트패키지<br> 3인권</td>
+                                                <td>서울랜드 파크이용권 3매 + <br>생맥주 6잔 + 치맥나이트 메뉴 중 택 1</td>
+                                                <td>77,000원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </dd>
+                                <dd>
+                                    <p>치맥나이트 메뉴 : 훈제치킨, 훈제 칠면조, 모듬튀김</p>
+                                    <p>운영기간 : 5월 ~ 10월 주말, 공휴일 (단 평일 100이상 예약 시 운영 가능)</p>
+                                    <p>상품 가격 및 메뉴 구성은 변경 가능 (사전 예약 필수)</p>
+                                    <p>우천시 운영하지 않습니다.</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>임직원 야유회 및 가족 초청행사</dt>
+                                <dd>
+                                    최대 8,000명을 수용할 수 있는 넓은 야외광장으로 각종 세트를 설치하여
+                                    공간을 꾸밀 수 있습니다.
+                                    대규모 이벤트를 진행할 수 있는 독립된 장소에서 독창적인 행사를 진행해보세요.
+                                </dd>
+                                <dd>
+                                    <p>추천행사 : 야외콘서트, 자동차시승행사, 이벤트행사 등</p>
+                                    <p>사용시기 : 4~5월, 9~10월</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>세일즈 프로모션 및 브랜드 강화 행사</dt>
+                                <dd>연간 300만명의 고객이 방문하는 서울랜드에서 펼쳐지는
+                                    각종 마케팅 프로그램입니다.
+                                    가족, 유아, 연인 등 다양한 계층의 고객들이 함께하는
+                                    서울랜드에서 효과적인 마케팅 활동이 이루어지도록
+                                    지원해드립니다.
+                                </dd>
+                                <dd>
+                                    <p>신제품 런칭 행사, 브랜드 홍보, 상품 시연회 등 각종 BTL 행사</p>
+                                    <p> 관공서 및 지자체 공익 프로그램 홍보행사</p>
+                                    <p> 스폰서, 멤버쉽 제휴</p>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ol>
+                </section>
+            </section>
+        </div>
+    </article>
+
+    <? include "../common/sub_foot.html" ?>
+
+    <script src="js/tab.js"></script>
+</body>
+</html>

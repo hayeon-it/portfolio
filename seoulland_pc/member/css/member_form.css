@@ -1,0 +1,135 @@
+body {
+background: #DD5E89;  /* fallback for old browsers */
+background: linear-gradient(to right, #F7BB97, #DD5E89)
+
+}
+
+#wrap {
+    width:860px; background: #fff; padding:70px; border-radius:20px; margin: 100px auto 100px; font-family: "Noto Sans KR"; font-weight: 300; position: relative
+}
+
+.bk {
+    width:280px; position: absolute; top:80px; left:80px
+}
+
+
+
+.home {
+    display: block; position: absolute; top:20px; right:20px
+}
+
+
+.logo {
+    display: none; background: url('../../images/logo.png') no-repeat; width:120px; height:80px; text-indent: -999px; overflow: hidden; background-size: 120px; margin: 0 auto 10px
+}
+
+#content .join_form {
+    position: relative; width:500px; top:0; left:360px
+}
+
+
+#content h2 {
+    font-size:26px; font-weight: 700; text-align: center; margin-bottom:40px; position: relative; left:170px; 
+}
+
+#content p {
+    margin-bottom:20px; position: relative; left:370px; font-size:15px; color:#fe4365
+}
+
+#content p.des {
+     width:300px; position: absolute; top:440px; left:70px; font-size:20px; font-weight: 700; text-align: center; color: #333
+}
+
+#content ul li {
+    position: relative; box-sizing: border-box; margin-bottom:18px
+}
+
+#content ul li input, #content ul li select  {
+   width:500px; height:60px; box-sizing: border-box; padding:10px; border-bottom:1px solid #ccc; font-family: "Noto Sans KR"; font-weight: 300; font-size: 16px; border-right:0; border-top: 0; border-left: 0
+}
+
+#content ul li input:focus {
+    outline: 0
+}
+
+#content ul li:nth-of-type(4) {
+    width:245px; float:left; margin-right:10px
+}
+
+#content ul li:nth-of-type(5) {
+    width:245px; float:left
+}
+
+#content ul li:nth-of-type(6) {
+    clear: both
+} 
+
+#content ul li #name, 
+#content ul li #nick {
+    width:245px; 
+}
+
+#content ul li #passtext {
+    display: block;  position: absolute; right:60px ;top:10px; 
+}
+
+#content ul li #eye {
+    display: block; position: absolute; right: 10px; top:20px; text-align: center;
+}
+
+#content ul li #eye i{
+    font-size:25px; color: #666
+}
+
+#content ul li #hp1, #content ul li #hp2, #content ul li #hp3 {
+    width:159px; 
+}
+
+#content ul li #hptext1{
+    display: block;  position: absolute; right:170px ;top:10px; 
+}
+
+#content ul li #hptext2 {
+    display: block;  position: absolute; right:10px ;top:10px; 
+}
+
+
+#content ul li #email1, #content ul li #email2 {
+    width:240px
+}
+
+#content ul li #emailtext{
+    display: block;  position: absolute; right:270px ;top:10px; 
+}
+
+#content ul li:nth-of-type(4) {
+    clear: both
+}
+
+
+#content ul li #loadtext {
+    position: absolute; top:10px; right:10px
+}
+
+#content ul li #loadtext2 {
+    position: absolute; top:10px; right:10px
+}
+
+#content .button {
+    overflow: hidden; width:370px; margin: 40px auto 0; display: flex; justify-content: space-between
+}
+
+#content .join_btn, #content .reset_btn {
+    display: block; width:180px; height: 26px; padding:14px 0; background:#ddd; text-align: center; font-size:16px
+}
+
+#content .join_btn {
+    background: #fe4365; color: #fff
+}
+
+
+
+
+
+
+

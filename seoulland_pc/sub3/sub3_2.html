@@ -1,0 +1,89 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>서울랜드-운영/운휴</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- 웹폰트는 css 위에 -->
+    <link rel="stylesheet" href="../common/css/common.css" /> <!-- Header, Footer -->
+    <link rel="stylesheet" href="common/css/sub3common.css"> <!-- 1 Depth의 공통 css -->
+    <link rel="stylesheet" href="css/content2.css" /> <!-- 어트랙션 css -->
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/58ed643491.js" crossorigin="anonymous"></script>
+    <!--[if IE9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <? include "../common/sub_head.html" ?>
+
+    <!-- MAIN VISUAL -->
+    <div class="visual_box"><img src="common/images/visual_1.jpg" alt=""></div>
+    <!-- SUB NAV -->
+    <div class="subnav_box">
+        <h3>이용정보</h3>
+        <ul class="sub_nav">
+            <li><a href="sub3_1.html">이용안내</a></li>
+            <li><a href="sub3_2.html" class="current">운영/운휴</a></li>
+            <li><a href="sub3_3.html">프로그램</a></li>
+        </ul>
+    </div>
+    <!-- CONTENT -->
+    <article id="content">
+        <div class="title_area">
+            <div class="line_map">
+                <span>Home </span>&gt;<span> 이용정보 </span>&gt;<strong> 운영/운휴</strong>
+            </div>
+            <h2>운영/운휴</h2>
+            <p></p>
+        </div>
+        <div class="content_area">
+        <section>
+        <h3>운영시간</h3>
+         <div class="box">
+        <dl>
+            <dt>주중</dt>
+            <dd>10:00 - 21:00</dd>
+        </dl>
+        <dl>
+            <dt>주말</dt>
+            <dd>10:00 - 22:00</dd>
+        </dl>
+        </div> 
+          </section>
+        <section>
+        <h3>운휴 어트랙션</h3>
+        <div class="tit_bg1">
+            <p>여름 운휴 어트랙션 <span>8월 10일 - 8월 20일</span></p>
+        </div>
+        <ul class="att_list">
+            <li><img src="images/content2/attr_18.jpg" alt=""><span>구름빵</span></li>
+            <li><img src="images/content2/attr_3.jpg" alt=""><span>요술의집</span></li>
+            <li><img src="images/content2/attr_8.jpg" alt=""><span>록카페</span></li>
+        </ul>
+        <div class="tit_bg2">
+            <p>겨울 운휴 어트랙션 <span>1월 10일 - 1월 20일</span></p>
+        </div>
+         <ul class="att_list">
+            <li><img src="images/content2/attr_22.jpg" alt=""><span>급류타기</span></li>
+            <li><img src="images/content2/attr_5.jpg" alt=""><span>엑스플라이어</span></li>
+            <li><img src="images/content2/attr_13.jpg" alt=""><span>카트라이더범퍼</span></li>
+        </ul>
+        </section>
+        </div>
+    </article>
+
+    <? include "../common/sub_foot.html" ?>
+   
+</body>
+</html>

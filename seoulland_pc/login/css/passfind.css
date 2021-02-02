@@ -1,0 +1,13 @@
+#content #idfind_form li:nth-of-type(2) input {
+    width: 500px
+}
+
+#content #idfind_form li:nth-of-type(3) input {
+    width:159px
+}
+
+.idfind_box ul:nth-of-type(2) {
+    width:120px; margin:40px auto
+}
+
+

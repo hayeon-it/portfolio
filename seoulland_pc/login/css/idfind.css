@@ -1,0 +1,90 @@
+#wrap {
+    width:860px; background: #fff; padding:100px 70px; border-radius:20px; margin: 100px auto 100px; font-family: "Noto Sans KR"; font-weight: 300; position: relative
+}
+
+.bk {
+    width:280px; position: absolute; top:80px; left:80px
+}
+
+.des {
+     width:300px; position: absolute; top:420px; left:70px; font-size:20px; font-weight: 700; text-align: center
+}
+
+.home {
+    display: block; position: absolute; top:20px; right:20px
+}
+
+#content {
+    width:500px;
+}
+
+#content h2 {
+    font-size:22px; margin-left:0; text-align: center; position: relative; left:355px
+}
+
+#content #idfind_form {
+    position: relative; width:500px; top:14px; left:360px
+}
+
+
+#content #idfind_form input {
+     width:500px; height:60px; box-sizing: border-box; padding:10px; border-bottom:1px solid #ccc; font-family: "Noto Sans KR"; font-weight: 300; border-radius: 2px; font-size: 16px; border-right:0; border-top: 0; border-left: 0
+}
+
+#content #idfind_form li {
+    margin-bottom:20px; position: relative
+}
+
+#content #idfind_form li:nth-of-type(2) input {
+    width:159px
+}
+
+#content #idfind_form .find_btn {
+    display: block; width:200px; padding:16px 0;border-radius: 30px; margin: 35px auto; background: #fe4365; color: #fff; cursor: pointer; text-align: center; 
+}
+
+
+#content #idfind_form .find_btn i {
+ font-size: 20px
+}
+
+.idfind_box {
+text-align: center; border-top:1px solid #ddd; margin-top:25px; padding-top:20px
+}
+
+p.idfind1 {
+    color:#333; font-size:17px; font-weight: 400
+}
+
+.idfind2 {
+    color:#333; font-size:16px; background: #ddd; width:400px; margin: 25px auto; line-height: 1.8em
+}
+
+#content #idfind_form .idfind2 li {
+    padding:5px 0; margin-bottom:0
+}
+
+
+.idfind2 li:nth-of-type(1) {
+    background: #ccc;
+}
+
+.idfind_box ul:nth-of-type(2) {
+    width:240px; margin:40px auto
+}
+
+
+.idf, .psf {
+    display: block; width:120px; padding-top:60px; text-align: center; position: relative; float:left;
+}
+
+.idf::before {
+    display: block; content: ''; position: absolute; top:-6px; left:50%;margin-left: -25px; width:54px; height:54px; background: url(../images/login1.png); background-size: 54px
+}
+
+.psf::before {
+    display: block; content: ''; position: absolute; top:-6px; left:50%;margin-left: -25px; width:54px; height:54px; background: url(../images/pass1.png); background-size: 54px
+}
+
+
+

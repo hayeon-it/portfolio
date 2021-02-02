@@ -1,0 +1,93 @@
+.intro {
+    padding: 50px 0;
+    margin: 100px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.intro p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.festival_list {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.festival_list>li {
+    overflow: hidden;
+    position: relative;
+    right: -200px;
+    top: 0;
+    opacity: 0;
+    margin-bottom: 120px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ddd;
+    transition: all .8s
+}
+
+.festival_list>li:nth-of-type(2n) {
+    left: -100px
+}
+
+.festival_list>li.boxMove1 {
+    right: 0;
+    opacity: 1;
+}
+
+.festival_list>li.boxMove2 {
+    left: 0;
+    opacity: 1;
+}
+
+.festival_list>li>img {
+    float: left;
+    width: 600px;
+    height: 400px;
+}
+
+.festival_list>li dl {
+    text-align: left;
+    padding: 80px 0 20px;
+    margin-left: 680px;
+    width: 480px;
+    height: 350px;
+}
+
+.festival_list>li dt {
+    font-size: 24px;
+    color: #fe4365;
+    font-weight: 400;
+}
+
+.festival_list li dd span {
+    color: #fe4365;
+    font-weight: 400;
+}
+
+.festival_list li dd {
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 2em;
+    text-align: justify;
+}
+
+.festival_list li dd:first-of-type {
+    margin: 20px 0;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    width: 150px;
+    height: 30px;
+    color: #fff;
+    background: #fe4365;
+}
+
+.festival_list li:nth-of-type(2n)>img {
+    float: right;
+    margin-right: 0;
+}
+
+.festival_list li:nth-of-type(2n) dl {
+    margin-left: 40px;
+}

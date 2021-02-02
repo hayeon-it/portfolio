@@ -1,0 +1,236 @@
+input {
+    outline: 0
+}
+
+
+/* 예매 */
+.book_form {
+    width:900px; margin:0 auto; 
+}
+
+.book_form li {
+    margin-bottom:5px
+}
+
+.book_form .des {
+    text-align: left; margin:10px 0 50px; font-size: 17px
+}
+
+ 
+.book_form .age #fare1, .book_form .age #fare2, .book_form .age #fare3 {
+    display: none
+} 
+
+.book_form .age li:last-of-type {
+    display: none
+}
+
+.book_form .age label:nth-of-type(1), .book_form .age_box p:nth-of-type(1), .book_form .date, .book_form .pay p:nth-of-type(1) {
+    font-size:24px; display: block; font-weight: 700;  text-align: left
+}
+
+.book_form input[type="date"] {
+    width:400px; padding:10px 15px; border:1px solid #ddd; font-family:"Noto Sans KR"; font-size:18px; border-radius: 30px; transition: all .5s; text-align: center
+}
+
+.book_form input[type="date"]:hover {
+    border:1px solid #fe4365; box-shadow: 2px 2px 5px 2px #eee
+}
+
+
+
+.book_form input[type="button"] {
+    transition: all .5s; 
+}
+
+.book_form input[type="button"]:hover {
+    background: #fe4365; color: #fff
+}
+
+
+.book_form label {
+    font-size:16px; font-weight: 700; margin-right:10px; cursor: pointer
+}
+
+.book_form input {
+    padding:12px 8px; font-size:16px; color: #333; font-family: "Noto Sans KR"; border: 1px solid #ddd; box-sizing: border-box; outline: 0; cursor: pointer
+}
+
+.book_form .age_box{
+    overflow: hidden; width:900px; margin:80px auto 
+}
+
+.book_form .age {
+    overflow: hidden; width:300px; float:left; margin: 0 auto;  
+}
+
+.book_form .age span {
+    display: block; font-size:12px; color: #666; margin-top:5px; font-weight: 400
+}
+
+.book_form .age li:nth-of-type(1) {
+    width:80px; float:left
+}
+
+.book_form .age li:nth-of-type(1) label {
+    font-size:20px
+}
+
+
+.book_form .age li:nth-of-type(2) {
+    width:200px; float:left
+}
+
+.book_form .age li:nth-of-type(2) input {
+    width:50px; margin:0 5px; text-align: center
+}
+
+.book_form .age li:nth-of-type(2) input[type="button"] {
+    width:50px; margin:0
+}
+
+
+
+.book_form input[type="submit"] {
+    background: #fe4365; color: #fff; border-radius: 40px; width:90px; margin-top:40px
+}
+
+
+.book_form .pay {
+    margin:70px 0; 
+}
+
+.book_form .pay img {
+    display: block; width:60px; height: 60px; margin: 0 auto 
+}
+
+.book_form .pay ul {
+    overflow: hidden; display: flex; justify-content: space-around
+}
+
+.book_form .pay ul li {
+    width:180px; padding:40px 0; border:1px solid #ddd; border-radius: 10px; 
+}
+
+.book_form .pay ul li label {
+    display: block; margin: 14px 0 5px
+}
+
+.book_form p {
+    margin-bottom: 30px
+}
+
+.book_form .total_fare {
+  background: #eee; padding:50px 0
+}
+
+.book_form .total_fare p {
+    font-size:17px; margin-bottom: 7px; font-weight: 400
+}
+
+.book_form .total_fare span {
+    margin-left:100px; font-weight: 300
+}
+
+.book_form .total_fare label {
+    font-size:18px; font-weight: 700; display: block; text-align: center; margin-top:20px
+}
+
+.book_form .total_fare input {
+    border:0; width:120px; margin-top:10px; background: none; font-size:20px; text-align: center
+}
+
+.book_form .total_fee {
+    overflow: hidden; width: 300px; margin: 0 auto; border-top:1px solid #ddd
+}
+
+.book_form .total_fee li{
+    width: 100px; float: left; font-size:18px
+}
+
+.book_form .total_fee li:nth-of-type(2){
+    width: 200px; float: left; 
+}
+
+.book_form .book_btn {
+    display: block; width:160px; background: #fe4365; color: #fff; padding:14px 0; border-radius: 30px; margin: 40px auto
+}
+
+
+/* 예매 내역 */
+
+.confirm {
+     width:600px; margin: 110px auto; 
+}
+
+.confirm p {
+    margin:30px 0 40px; font-size: 17px
+}
+
+.confirm ul {
+    overflow: hidden; width:500px; margin: 0 auto;
+}
+
+.confirm li:nth-of-type(1) {
+    float: left; width: 400px; position: relative
+}
+
+.confirm input#pass {
+    border-left:0;  border-right:0;  border-top:0; border-bottom: 1px solid #ddd; padding:15px 10px; width:300px; font-size:16px
+}
+
+
+
+.confirm li:nth-of-type(1) #eye {
+   position: absolute; top:12px; right:50px
+}
+
+.confirm li:nth-of-type(1) #eye i {
+   font-size:18px; color: #555
+}
+
+.confirm input[type="submit"] {
+    width:100px; padding:10px 0; background: #fe4365; color: #fff; border:0; border-radius: 20px; cursor: pointer; margin-top:4px
+}
+
+
+
+/* 예매내역확인 */
+
+.book_box {
+   width: 750px; padding:20px 50px; margin: 100px auto; background: #efefef; text-align: left
+}
+
+.book_box ul {
+    padding:15px 20px
+}
+
+.book_box ul li {
+    font-size: 18px; margin: 12px 0
+}
+
+.book_box ul li span{
+   font-weight: 700
+}
+
+.book_box .booknum {
+    font-size:24px; background: #eee; color: #fe4365; border-bottom: 1px solid #ccc; padding: 8px 0; 
+}
+
+.book_box .booknum span {
+    color: #333; font-weight: 700
+}
+
+.book_box .book2 {
+    background: #fff; margin:30px 0 40px
+}
+
+.book_box .book3 {
+    background: #fff; margin-bottom: 30px
+}
+
+.book_box .info {
+    background: #ff5e7c; color: #fff; border-radius: 20px; padding:5px 10px; font-size:17px; display: inline-block
+}
+
+
